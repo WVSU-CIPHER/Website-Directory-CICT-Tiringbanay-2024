@@ -16,12 +16,12 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-full z-[999] fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md">
+    <div className="w-full z-[999] fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md">    
       <nav className="max-w-[1400px] mx-auto w-full flex items-center justify-between">
         <Link href="/">
           <span className="font-chopsic">tiringbanay</span>
         </Link>
-        <div className="flex links text-[14px]  items-center gap-4">
+        <div className="flex links text-[14px]  items-center gap-[48px]">
           {navigations.map((navigation, index) => (
             <Link key={index} href={navigation.href}>
               <span className={`${poppins.className} text-slate-100 font-sans`}>
