@@ -10,7 +10,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-full flex flex-col p-4 bg-red-500">
+    <div className="w-full fixed top-0 right-0 flex flex-col p-4 bg-transparent backdrop-blur-sm">
       <nav className="max-w-[1400px] mx-auto w-full flex items-center justify-between">
         <h1>Logo</h1>
         <div className="flex items-center gap-4">
