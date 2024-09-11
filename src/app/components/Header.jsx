@@ -16,7 +16,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-full fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md">
+    <div className="w-full z-[999] fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md">    
       <nav className="max-w-[1400px] mx-auto w-full flex items-center justify-between">
         <Link href="/">
           <span className="font-chopsic">tiringbanay</span>
