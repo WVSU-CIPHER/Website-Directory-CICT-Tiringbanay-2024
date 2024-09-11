@@ -5,7 +5,11 @@ import bg from "../public/assets/images/background.jpg";
 export default function HeroPage() {
   return (
     <div className="">
-      <Image src={bg} className="w-full h-screen" alt="High Tech Background" />
+      <Image
+        src={bg}
+        className="w-full h-screen inset-1"
+        alt="High Tech Background"
+      />
     </div>
   );
 }
