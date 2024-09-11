@@ -1,7 +1,11 @@
-import React from 'react'
+"use client";
+import Image from "next/image";
+import bg from "../public/assets/images/background.jpg";
 
 export default function HeroPage() {
   return (
-    <div>HeroPage </div>
-  )
+    <div className="">
+      <Image src={bg} className="w-full h-screen" alt="High Tech Background" />
+    </div>
+  );
 }
