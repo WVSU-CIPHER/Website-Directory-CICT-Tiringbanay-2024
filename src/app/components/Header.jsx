@@ -18,7 +18,9 @@ export default function Header() {
   return (
     <div className="w-full fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-sm">
       <nav className="max-w-[1400px] mx-auto w-full flex items-center justify-between">
-        <h1 className="text-normal">tiringbanay</h1>
+        <Link href="/">
+          <span className="font-chopsic">tiringbanay</span>
+        </Link>
         <div className="flex links text-[14px]  items-center gap-4">
           {navigations.map((navigation, index) => (
             <Link key={index} href={navigation.href}>

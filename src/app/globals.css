@@ -35,5 +35,7 @@ body {
 
 @font-face {
   font-family: "Chopsic" sans-serif;
-  src: url("./fonts/chopsic-cdnfonts/Chopsic-K6Dp.ttf");
+  src: url("./fonts/chopsic-cdnfonts/Chopsic-K6Dp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
