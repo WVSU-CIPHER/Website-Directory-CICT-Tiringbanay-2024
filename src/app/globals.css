@@ -32,3 +32,8 @@ body {
   font-family: "Poppins" sans-serif;
   src: url("./fonts/Poppins/Poppins-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Chopsic" sans-serif;
+  src: url("./fonts/chopsic/Chopsic.otf");
+}
