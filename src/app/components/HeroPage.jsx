@@ -1,7 +1,5 @@
-import React from 'react'
+"use client";
 
 export default function HeroPage() {
-  return (
-    <div>HeroPage </div>
-  )
+  return <div className="text-slate-100">HeroPage </div>;
 }
