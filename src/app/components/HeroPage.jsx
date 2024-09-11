@@ -10,28 +10,28 @@ const poppins = Poppins({
 export default function HeroPage() {
   return (
     <div>
-      <div class="min-h-screen flex justify-center items-center bg-sea2 bg-fixed bg-no-repeat bg-cover bg-center">
-        <div className="flex flex-col gap-3 text-center">
-          <h1 class={`${poppins.className} text-[18px] uppercase`}>
-            a shift in reality
+      <div className="min-h-screen flex justify-center items-center bg-sea2 bg-fixed bg-no-repeat bg-cover bg-center">
+        <div className="flex flex-col text-center">
+          <h1 className={"${poppins.className} pb-7 tracking-[7px] text-[#EAF7FF] font-medium text-[18px]"}>
+          A SHIFT IN REAL<span className="text-[#81ECDE]">IT</span>Y
           </h1>
-          <div className="flex flex-col gap-4 text-center">
-            <h1 className="text-[72px] font-chopsic">tiringbanay</h1>
-            <h2 className="text-[24px] font-chopsic">2024</h2>
+          <div className="flex flex-col text-center">
+            <h1 className="text-[72px] font-chopsic text-shadow-custom">tiringbanay</h1>
+            <h2 className="text-[24px] font-chopsic text-shadow-custom pb-16">2024</h2>
           </div>
-          <div className="flex items-center gap-8 justify-center">
-            <button className="rounded bg-slate-800">
-              <span className="uppercase">find your group</span>
+          <div className="flex items-center gap-[16px] justify-center">
+            <button className="{`${poppins.className} leading-[11px] bg-[#2f5057] rounded-[8px] w-[158px] h-[37px] border-[#FFFFFF] border-[1px] tracking-[1px] text-[14px]">
+              <span className="uppercase text-[#FFFFFF] font-semibold">find your group</span>
             </button>
-            <button className="rounded bg-slate-800">
-              <span className="uppercase">find your group</span>
+            <button className="{`${poppins.className} leading-[11px] bg-[#2f5057] rounded-[8px] w-[158px] h-[37px] border-[#FFFFFF] border-[1px] tracking-[1px] text-[14px]">
+              <span className="uppercase text-[#FFFFFF] font-semibold">About the Event</span>
             </button>
           </div>
         </div>
       </div>
 
       <div class="min-h-screen flex justify-center items-center bg-sea2 bg-fixed bg-no-repeat bg-cover bg-center">
-        <div class="p-10 h-screen bg-transparent bg-opacity-50 backdrop-blur-lg">
+        <div class="p-10 backdrop-blur-lg">
           <h2 class="font-bold text-4xl">Sample Section</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam
@@ -39,7 +39,7 @@ export default function HeroPage() {
             impedit laborum ipsa vel quos amet laboriosam dolorum suscipit!
             Nihil eos repellendus blanditiis repellat laboriosam veniam quod
             maxime ab! Ea eveniet doloremque, excepturi totam, et molestias
-            dicta accusamus quibusdam quas sunt inventore!
+            dicta accussemiboldbusdam quas sunt inventore!
           </p>
         </div>
       </div>
