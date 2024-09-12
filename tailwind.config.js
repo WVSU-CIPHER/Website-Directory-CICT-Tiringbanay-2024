@@ -24,7 +24,7 @@ module.exports = {
     },
   },
   plugins: [
-    function({ addUtilities }) {
+    function ({ addUtilities }) {
       addUtilities({
         '.text-shadow-custom': {
           'text-shadow': '0 4px 8px rgba(129, 236, 222, 0.5)',
