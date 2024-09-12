@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/Header";
 import { Poppins } from "@next/font/google";
 
 const geistSans = localFont({
