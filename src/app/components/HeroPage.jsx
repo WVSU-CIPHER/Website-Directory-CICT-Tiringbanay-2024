@@ -45,7 +45,7 @@ export default function HeroPage() {
       </div>
 
       <div className="min-h-screen flex justify-center items-center bg-sea2 bg-fixed bg-no-repeat bg-cover bg-center">
-        <div className="p-10 backdrop-blur-lg">
+        <div className="p-10 backdrop-blur-lg min-h-screen">
           <h2 className="font-bold text-4xl">Sample Section</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam

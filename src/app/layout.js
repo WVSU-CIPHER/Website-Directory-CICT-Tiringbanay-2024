@@ -39,7 +39,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} ${chopsic.variable} antialiased`}
       >
-        <Header font={chopsic.variable} />
         {children}
       </body>
     </html>
