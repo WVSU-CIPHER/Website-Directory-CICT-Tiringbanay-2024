@@ -39,3 +39,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
+.bg-tiringbanay {
+  background-image: url("./public/assets/images/background.png");
+}
