@@ -1,4 +1,6 @@
 // groups.js
+
+// TODO: download images from gdrive and change these below:
 import acererak from "../app/public/assets/images/groups/acererak.png"
 import aech from "../app/public/assets/images/groups/aech.png"
 import anorak from "../app/public/assets/images/groups/anorak.png"
@@ -14,27 +16,8 @@ import sorrento from "../app/public/assets/images/groups/sorrento.png"
 import zandor from "../app/public/assets/images/groups/zador.png"
 
 
-// TODO: fix order of groups
-/*
-
-1. Parzival’s Commanders (Red)
-2. Anorak’s Strategists (White)
-3. Artemis’ Warriors (Baby Pink)
-4. Aech’s Aces (Purple)
-5. I-r0k’s Raiders (Orange)
-6. Shoto’s Survivors (Green)
-7. Acererak’s Crew (Yellow)
-8. Zandors’s Insurgents (Dark Blue)
-9. Og’s Enforcers (Brown)
-10. Iron Giants (Black)
-11. Daito’s Defenders (Grey)
-12. BOT 101 Battalion (Maroon)
-13. Sorrento’s Army (Fuschia)
 
 
-*/
-
-// TODO: input title and description
 const groups = [
     {
         name: "Parzival",
