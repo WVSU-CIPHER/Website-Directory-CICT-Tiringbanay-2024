@@ -7,6 +7,8 @@
 import { chopsic } from "../layout";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import fs from "fs"
+import path from "path"
 
 const poppins = Poppins({
     weight: ["400", "900"],
@@ -30,16 +32,16 @@ const rulesAndRegulations = [
     "Any violations of the rules or guidelines may result in consequences such as the loss of participation points or further disciplinary action."
 ]
 
-const contests = ["Sugilanon", "meme-icry", "pixel fusion", "avatar banners", "cispitizens", "gunter cheers", "panakayon"]
+const contests = ["sugilanon", "meme-icry", "pixel fusion", "avatar banners", "cispitizens", "gunter cheers", "panakayon"]
 
 function ContestsOptionPicker() {
     return (
         <div className="w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md">
             <div className="flex  gap-[16px] py-[4px] w-full mx-auto items-center justify-between flex-wrap">
                 {contests.map((contest, index) => (
-                    <button key={index} className={`focus:bg-[#5A8070] focus:ring-[#7AD7C9] focus:ring-2  duration-100 h-full rounded-md uppercase font-semibold px-[8px] py-[4px] text-[16px] text-nowrap`}>
+                    <Link href={`/contests/${contest}`} key={index} className={`focus:bg-[#5A8070] focus:ring-[#7AD7C9] focus:ring-2  duration-100 h-full rounded-md uppercase font-semibold px-[8px] py-[4px] text-[16px] text-nowrap`}>
                         {contest}
-                    </button>
+                    </Link>
                 ))}
 
             </div>
