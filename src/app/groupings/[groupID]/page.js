@@ -16,9 +16,6 @@ export default function GroupDetails({ params }) {
                 Key {group.key} <br /> <br />
                 Title: {group.title} <br />
                 Group Description: <br /> {group.description}
-
-
-
             </div >
         </>
     )

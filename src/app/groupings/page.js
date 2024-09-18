@@ -34,6 +34,7 @@ export default function GroupingsPage() {
                                 ">
                                 <Link href={`/groupings/${group.name}`}>
                                     <Image
+                                        className="max-h-full bg-contain"
                                         src={group.image}
                                         width={200}
                                         height={200}
