@@ -35,10 +35,9 @@ const contests = ["Sugilanon", "meme-icry", "pixel fusion", "avatar banners", "c
 function ContestsOptionPicker() {
     return (
         <div className="w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md">
-            <div className="flex gap-[16px] w-full mx-auto items-center justify-between flex-wrap">
+            <div className="flex  gap-[16px] py-[4px] w-full mx-auto items-center justify-between flex-wrap">
                 {contests.map((contest, index) => (
-                    <button key={index} className={`focus:bg-red-500 rounded uppercase  px-[16px] font-semibold ${poppins.className}`}>
-
+                    <button key={index} className={`focus:bg-[#5A8070] focus:ring-[#7AD7C9] focus:ring-2  duration-100 h-full rounded-md uppercase font-semibold px-[8px] py-[4px] text-[16px] text-nowrap`}>
                         {contest}
                     </button>
                 ))}
