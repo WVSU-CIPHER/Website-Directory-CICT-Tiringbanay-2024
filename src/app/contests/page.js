@@ -7,6 +7,8 @@ import React from 'react';
 import { chopsic } from "../layout";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import bg from "/public/assets/images/background.png"
+import Image from 'next/image';
 
 // Warning Icon
 export function MarketeqWarningAlt3(props) {
@@ -51,7 +53,6 @@ function RulesAndGuidelinesPDF() {
                     <a
                         href="/TIRINGBANAY-2024-GUIDELINES.pdf"
                         className="ml-2 underline"
-                        download="TIRINGBANAY-2024-GUIDELINES.pdf"
                     >
                         PROGRAM-FLOW-RULES-and-GUIDELINES.pdf
                     </a>
@@ -113,10 +114,19 @@ export default function ContestsPage() {
     return (
         <div>
             <ContestsHeader font={chopsic.variable} />
-            <div className="min-h-screen flex flex-col   justify-center items-center bg-tiringbanay bg-fixed bg-no-repeat bg-cover bg-center">
-                <div className="pb-2 w-full h-full flex flex-col ">
 
-                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px]">
+            <div className="h-screen overflow-hidden">
+                <Image
+                    src={bg}
+                    alt="Background"
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                />
+
+                <div className="pb-2 w-full h-full flex flex-col overflow-y-scroll">
+
+                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px] border border-white">
                         <div className="py-[64px] flex flex-col w-full gap-[32px]">
 
                             <h1 className={`${chopsic.className} text-[40px] text-center`}>

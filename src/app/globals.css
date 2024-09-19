@@ -42,5 +42,5 @@ body {
 
 
 .bg-tiringbanay {
-  background-image: url("./public/assets/images/background.png");
+  background-image: url("/public/assets/images/background.png");
 }
