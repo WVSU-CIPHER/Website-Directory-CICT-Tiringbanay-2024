@@ -7,8 +7,6 @@
 import { chopsic } from "../layout";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
-import fs from "fs"
-import path from "path"
 
 const poppins = Poppins({
     weight: ["400", "900"],
@@ -33,6 +31,15 @@ const rulesAndRegulations = [
 ]
 
 const contests = ["sugilanon", "meme-icry", "pixel fusion", "avatar banners", "cispitizens", "gunter cheers", "panakayon"]
+
+function RulesAndGuidelinesPDF() {
+    return (
+        <div className="flex flex-col w-full rounded-md p-2 bg-black/50 backdrop-blur-sm max-w-full mx-auto h-fit">
+            <h1 className={`${poppins.className} md:text-[14px] text-[12px] uppercase text-white`}>rules and guidelines</h1>
+            <a href="/" className="uppercase underline hover:text-emerald-500 duration-200">download the rules and guidelines here</a>
+        </div>
+    )
+}
 
 function ContestsOptionPicker() {
     return (
@@ -94,13 +101,16 @@ export default function ContestsPage() {
             <div className="min-h-screen flex flex-col   justify-center items-center bg-tiringbanay bg-fixed bg-no-repeat bg-cover bg-center">
                 <div className="pb-2 w-full h-full flex flex-col ">
 
-                    <div className="  items-center justify-center flex flex-col  w-[90%] mx-auto pt-[90px]">
+                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px]">
                         <div className="py-[64px] flex flex-col w-full gap-[32px]">
 
                             <h1 className={`${chopsic.className} text-[40px] text-center`}>
                                 contests
                             </h1>
-                            <ContestsOptionPicker />
+                            <div className="mx-auto flex flex-col gap-4">
+                                <RulesAndGuidelinesPDF />
+                                <ContestsOptionPicker />
+                            </div>
                         </div>
                         <div className="flex flex-col gap-[64px] w-full z-[200]">
                             <div className="uppercase w-full flex flex-col justify-between">
@@ -146,3 +156,4 @@ export default function ContestsPage() {
 
 
 }
+
