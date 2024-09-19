@@ -62,12 +62,6 @@ export default function GroupDetails({ params }) {
                         <p className="mt-8 font-poppins text-base">{group.description}</p>
 
                     </div>
-
-
-
-
-
-
                 </div >
                 {/* GRUNTERS LIST */}
                 <div className="
