@@ -42,7 +42,7 @@ export default function Header() {
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
-                  className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-opacity-80 relative z-20"
+                  className="inline-flex items-center  justify-center p-2 rounded-md  hover:text-opacity-80 relative z-[999] text-white"
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
@@ -82,6 +82,7 @@ export default function Header() {
                   )}
                 </button>
               </div>
+              </nav>
               <Transition
             show={isOpen}
             enter="transition ease-out duration-200 transform"
@@ -93,20 +94,31 @@ export default function Header() {
           >
             {(ref) => (
               <div
-                className="fixed w-screen  px-10 border-b border-gray-200 bg-white"
+                className="absolute w-screen top-0 left-0 h-fit  px-10 border-b bg-black-100/40 border-gray-200 backdrop-blur-md border-none"
                 id="mobile-menu"
               >
-                <div className="px-2 py-8 space-y-5 sm:px-3 w-full">
+                <div className="px-1 py-8 space-y-2 w-full flex flex-col">
                   <Link onClick={() => setIsOpen(false)} href="/">
-                    Home
+                    <span className={`${poppins.className}`}>Home</span>
                   </Link>
-                
+                  <Link onClick={() => setIsOpen(false)} href="/guidelines">
+                    <span className={`${poppins.className}`}>Guidelines</span>
+                  </Link>
+                  <Link onClick={() => setIsOpen(false)} href="/programme">
+                    <span className={`${poppins.className}`}>Programme</span>
+                  </Link>
+                  <Link onClick={() => setIsOpen(false)} href="/contests">
+                    <span className={`${poppins.className}`}>Contest</span>
+                  </Link>
+                  <Link onClick={() => setIsOpen(false)} href="/groupings">
+                    <span className={`${poppins.className}`}>Groupings</span>
+                  </Link>
+                  
                 </div>
               </div>
             )}
             
           </Transition>
-      </nav>
     </div>
   );
 }
