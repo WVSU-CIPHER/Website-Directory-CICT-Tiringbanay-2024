@@ -60,7 +60,7 @@ const groups = [
         image: artemis,
     },
     {
-        name: "Bot_101",
+        name: "Bot 101",
         key: 5,
         image: bot101,
     },
