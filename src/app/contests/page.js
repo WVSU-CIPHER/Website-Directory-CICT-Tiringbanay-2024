@@ -45,7 +45,18 @@ function RulesAndGuidelinesPDF() {
             <MarketeqWarningAlt3 />
             <div className="flex flex-col gap-1">
                 <h1 className={`font-semibold md:text-[14px] text-[12px] uppercase text-white`}>rules and guidelines</h1>
-                <span className="uppercase underline hover:text-emerald-500 duration-200">download the rules and guidelines: </span>
+
+                <span>
+                    Download the updated version:{" "}
+                    <a
+                        href="/TIRINGBANAY-2024-GUIDELINES.pdf"
+                        className="ml-2 underline"
+                        download="TIRINGBANAY-2024-GUIDELINES.pdf"
+                    >
+                        PROGRAM-FLOW-RULES-and-GUIDELINES.pdf
+                    </a>
+                </span>
+
             </div>
         </div>
     )
