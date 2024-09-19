@@ -41,6 +41,7 @@ function RulesAndGuidelinesPDF() {
     )
 }
 
+
 function ContestsOptionPicker() {
     return (
         <div className="w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md">
