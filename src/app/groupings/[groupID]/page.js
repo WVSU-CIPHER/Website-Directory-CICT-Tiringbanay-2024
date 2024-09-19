@@ -4,7 +4,7 @@ import { chopsic } from "../../layout"
 import groupData from "/src/data/groups"
 import { FaChevronLeft } from "react-icons/fa";
 import Image from "next/image"
-import bg from '../../public/assets/images/background.png'
+import bg from '/public/assets/images/background.png'
 import Link from 'next/link'
 
 export default function GroupDetails({ params }) {
@@ -38,12 +38,12 @@ export default function GroupDetails({ params }) {
 
 
                 {/* ABOUT THE TEAM */}
-                <div className="mt-32  bg-[rgb(1,0,4)]/60 max-w-[90vw] h-fit relative z-10
+                <div className="mt-32  bg-[rgb(1,0,4)]/60 backdrop-blur-md
+                max-w-[90vw] h-fit relative z-10
                 flex flex-col items-center md:flex-row
                 px-8 md:px-10 pb-8 pt-2 md:pb-0 md:pt-0 rounded-lg
                 
                 ">
-
 
                     <Image
                         src={group.image}
@@ -72,9 +72,11 @@ export default function GroupDetails({ params }) {
                 {/* GRUNTERS LIST */}
                 <div className="
                 relative z-10 flex flex-col mt-10 mb-10 px-10 py-8 rounded-lg
-                 bg-[rgb(1,0,4)]/60 w-[90vw] h-fit
+                 bg-[rgb(1,0,4)]/60 backdrop-blur-md
+                 w-[90vw] h-fit
                  
                 ">
+
 
                     <h2 className="font-chopsic text-xl font-bold mb-4">
                         Grunters
