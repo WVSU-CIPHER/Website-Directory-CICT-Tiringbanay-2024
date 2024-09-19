@@ -3,7 +3,7 @@ import { chopsic } from "../layout"
 import groups from "/src/data/groups"
 import Image from 'next/image'
 import Link from 'next/link'
-import bg from '../public/assets/images/background.png'
+import bg from '/public/assets/images/background.png'
 
 export default function GroupingsPage() {
 
@@ -30,9 +30,10 @@ export default function GroupingsPage() {
 
                 <section className="
 
-                flex flex-wrap  justify-center w-[90vw] mx-auto py-10 mb-10
-               bg-[rgb(1,0,4)]/60 rounded-xl
+                flex flex-wrap justify-center w-[90vw] mx-auto py-10 mb-10
+               bg-[rgb(1,0,4)]/60 backdrop-blur-md rounded-xl
                 ">
+
                     {groups.map((group) => {
                         return (
                             <div key={group.key}
