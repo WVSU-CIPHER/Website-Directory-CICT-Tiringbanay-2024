@@ -2,11 +2,17 @@
 
 
 
-
+import React from 'react';
 
 import { chopsic } from "../layout";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+
+// Warning Icon
+export function MarketeqWarningAlt3(props) {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 50 50" {...props}><g fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="#344054" strokeWidth={2} d="M25 14.583v12.5"></path><path stroke="#344054" strokeWidth={3} d="M25.104 35.417h-.208"></path><path stroke="#306cfe" strokeWidth={2} d="m36.417 7.292l9.625 16.666a2.08 2.08 0 0 1 0 2.084l-9.625 16.666a2.08 2.08 0 0 1-1.792 1.042h-19.25a2.08 2.08 0 0 1-1.792-1.042L3.958 26.042a2.08 2.08 0 0 1 0-2.084l9.625-16.666a2.08 2.08 0 0 1 1.792-1.042h19.25a2.08 2.08 0 0 1 1.792 1.042"></path></g></svg>);
+}
+
 
 const poppins = Poppins({
     weight: ["400", "900"],
@@ -34,9 +40,13 @@ const contests = ["sugilanon", "meme-icry", "pixel fusion", "avatar banners", "c
 
 function RulesAndGuidelinesPDF() {
     return (
-        <div className="flex flex-col w-full rounded-md p-2 bg-black/50 backdrop-blur-sm max-w-full mx-auto h-fit">
-            <h1 className={`${poppins.className} md:text-[14px] text-[12px] uppercase text-white`}>rules and guidelines</h1>
-            <a href="/" className="uppercase underline hover:text-emerald-500 duration-200">download the rules and guidelines here</a>
+        <div className="flex w-full items-center gap-6 rounded-md p-4 bg-black/50 backdrop-blur-sm max-w-full mx-auto h-fit">
+
+            <MarketeqWarningAlt3 />
+            <div className="flex flex-col gap-1">
+                <h1 className={`font-semibold md:text-[14px] text-[12px] uppercase text-white`}>rules and guidelines</h1>
+                <span className="uppercase underline hover:text-emerald-500 duration-200">download the rules and guidelines: </span>
+            </div>
         </div>
     )
 }
