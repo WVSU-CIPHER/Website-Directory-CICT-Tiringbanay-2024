@@ -30,7 +30,7 @@ export default function GroupingsPage() {
 
                 <section className="
 
-                flex flex-wrap justify-center w-[90vw] mx-auto py-10 mb-10
+                flex flex-wrap  justify-center w-[90vw] mx-auto py-10 mb-10
                bg-[rgb(1,0,4)]/60 rounded-xl
                 ">
                     {groups.map((group) => {
