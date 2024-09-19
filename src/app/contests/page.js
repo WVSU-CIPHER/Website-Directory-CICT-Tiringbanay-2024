@@ -68,13 +68,6 @@ function ContestsOptionPicker() {
     )
 }
 
-<button
-    className={`${poppins.className} leading-[11px] bg-[#2f5057] rounded-[8px] w-[158px] h-[37px] border-[#FFFFFF] border-[1px] tracking-[1px] text-[14px]`}
->
-    <span className="uppercase text-[#FFFFFF] font-semibold">
-        About the Event
-    </span>
-</button>
 
 function ContestsHeader() {
     const navigations = [
