@@ -1,19 +1,19 @@
 // groups.js
 
 // TODO: download images from gdrive and change these below:
-import acererak from "../app/public/assets/images/groups/acererak.png"
-import aech from "../app/public/assets/images/groups/aech.png"
-import anorak from "../app/public/assets/images/groups/anorak.png"
-import artemis from "../app/public/assets/images/groups/artemis.png"
-import bot101 from "../app/public/assets/images/groups/bot101.png"
-import daito from "../app/public/assets/images/groups/daito.png"
-import iroks from "../app/public/assets/images/groups/iroks.png"
-import iron from "../app/public/assets/images/groups/iron.png"
-import og from "../app/public/assets/images/groups/og.png"
-import parzival from "../app/public/assets/images/groups/parzival.png"
-import shoto from "../app/public/assets/images/groups/shoto.png"
-import sorrento from "../app/public/assets/images/groups/sorrento.png"
-import zandor from "../app/public/assets/images/groups/zador.png"
+import acererak from "/public/assets/images/groups/acererak.png"
+import aech from "/public/assets/images/groups/aech.png"
+import anorak from "/public/assets/images/groups/anorak.png"
+import artemis from "/public/assets/images/groups/artemis.png"
+import bot101 from "/public/assets/images/groups/bot101.png"
+import daito from "/public/assets/images/groups/daito.png"
+import iroks from "/public/assets/images/groups/iroks.png"
+import iron from "/public/assets/images/groups/iron.png"
+import og from "/public/assets/images/groups/og.png"
+import parzival from "/public/assets/images/groups/parzival.png"
+import shoto from "/public/assets/images/groups/shoto.png"
+import sorrento from "/public/assets/images/groups/sorrento.png"
+import zandor from "/public/assets/images/groups/zador.png"
 
 
 
