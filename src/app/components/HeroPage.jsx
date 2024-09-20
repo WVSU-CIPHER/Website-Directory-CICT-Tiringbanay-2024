@@ -42,7 +42,7 @@ export default function HeroPage() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full sm:w-[1440px] mt-[240px] py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-1 relative">
+      <div className="flex flex-col w-full sm:w-[1440px] mt-[240px] py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-[100] relative">
         <div className="text-white flex flex-col px-4 sm:px-8">
           <div className="font-chopsic flex justify-center text-[24px] uppercase items-center pb-9 tracking-widest">rationale</div>
           <div className={`${poppins.className} justify-center`}>
