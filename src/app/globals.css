@@ -39,3 +39,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.circle {
+  width: 160px;
+  height: 160px;
+  background-color: #599584;
+  border-radius: 50%;
+}
+
+.bg-tiringbanay {
+  background-color: #599584; 
+  background-image: url("../app/heropage/background.jpg");
+}

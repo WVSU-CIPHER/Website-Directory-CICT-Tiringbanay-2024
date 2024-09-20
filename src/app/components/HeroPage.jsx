@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import cictLogo from '../public/assets/heropage/logo-cict.png';
+import cictLogo from '../public/assets/images/heropage/logo-cict.png';
 import { Poppins } from '@next/font/google';
 import Link from 'next/link'
 
@@ -13,7 +13,7 @@ const poppins = Poppins({
 export default function HeroPage() {
   return (
     <>
-      <div className="bg-tiringbanay w-full h-screen fixed top-0 left-0"></div>
+      <div className="w-full h-screen fixed top-0 left-0 bg-tiringbanay"></div>
 
       <div className="relative">
         <div className="mt-52 ml-16 flex flex-col gap-4">
@@ -76,7 +76,11 @@ export default function HeroPage() {
 
         <div className="grid grid-flow-row sm:grid-flow-col gap-8 px-4 sm:px-48 justify-items-center">
           <div className="flex flex-col items-center">
-            <div className="circle"></div>
+          <div className="circle">
+              <Image 
+                  src=""
+              />
+            </div>
             <div className="uppercase font-chopsic pt-4 text-[18px] tracking-[0.72px] text-center">firstname lastname</div>
             <div className={`${poppins.className} pt-2 uppercase text-[14px] font-medium text-center`}>title</div>
             <div className="text-[14px] font-medium text-center pt-4">Lorem ipsum dolor sit amet,
@@ -85,7 +89,11 @@ export default function HeroPage() {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="circle"></div>
+          <div className="circle">
+              <Image 
+                  src=""
+              />
+            </div>
             <div className="uppercase font-chopsic pt-4 text-[18px] tracking-[0.72px] text-center">firstname lastname</div>
             <div className={`${poppins.className} pt-2 uppercase text-[14px] font-medium text-center`}>title</div>
             <div className="text-[14px] font-medium text-center pt-4">Lorem ipsum dolor sit amet,
@@ -94,7 +102,11 @@ export default function HeroPage() {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="circle"></div>
+          <div className="circle">
+              <Image 
+                  src=""
+              />
+            </div>
             <div className="uppercase font-chopsic pt-4 text-[18px] tracking-[0.72px] text-center">firstname lastname</div>
             <div className={`${poppins.className} pt-2 uppercase text-[14px] font-medium text-center`}>title</div>
             <div className="text-[14px] font-medium text-center pt-4">Lorem ipsum dolor sit amet,
@@ -105,7 +117,11 @@ export default function HeroPage() {
 
         <div className="flex justify-center mt-12">
           <div className="flex flex-col items-center">
-            <div className="circle"></div>
+            <div className="circle">
+              <Image 
+                  src=""
+              />
+            </div>
             <div className="uppercase font-chopsic pt-4 text-[18px] tracking-[0.72px] text-center">firstname lastname</div>
             <div className={`${poppins.className} pt-2 uppercase text-[14px] font-medium text-center`}>title</div>
             <div className="text-[14px] font-medium text-center pt-4">Lorem ipsum dolor sit amet,
