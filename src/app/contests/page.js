@@ -28,36 +28,10 @@ import { navigations } from '@/data/navigations';
 import { WarningIcon } from '../components/icons/Warning';
 
 
-// To suit the contest layout, we could use the header from the components tho
-function ContestsHeader() {
-
-    return (
-        <div className="w-full fixed z-[100]  top-0 right-0 flex flex-col px-[64px] py-[32px]">
-            <nav className="max-w-[1400px] mx-auto w-full flex items-center justify-between">
-                <Link href="/">
-                    <span className="font-chopsic cursor-pointer">tiringbanay</span>
-                </Link>
-                <div className="flex links text-[14px]  items-center gap-[48px]">
-                    {navigations.map((navigation, index) => (
-                        <Link key={index} href={navigation.href}>
-                            <span className={`${poppins.className} text-white font-sans`}>
-                                {navigation.name.slice(0, 1).toUpperCase() +
-                                    navigation.name.slice(1)}
-                            </span>
-                        </Link>
-                    ))}
-                </div>
-            </nav>
-        </div>
-    );
-}
 
 export default function ContestsPage() {
     return (
         <div>
-            {/* Header for contests */}
-            <ContestsHeader font={chopsic.variable} />
-
             {/* Content */}
             <div className="h-screen w-screen overflow-hidden">
                 {/* Background */}
