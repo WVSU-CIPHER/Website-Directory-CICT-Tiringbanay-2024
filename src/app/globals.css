@@ -39,6 +39,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 .circle {
   width: 160px;
   height: 160px;
@@ -47,9 +48,9 @@ body {
 }
 
 .bg-tiringbanay {
-  background-color: #599584; 
-  background-image: url("../app//heropage/background.png");
-  width: 100% ;
+  background-color: #599584;
+  background-image: url("../../public/assets/images/background.png");
+  width: 100%;
   height: 100vh;
   position: fixed;
   top: 0px;
