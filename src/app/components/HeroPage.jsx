@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import cictLogo from '../heropage/logo-cict.png';
+import cictLogo from '../../../public/assets/images/logo-cict.png';
 import { Poppins } from '@next/font/google';
 import Link from 'next/link'
 
