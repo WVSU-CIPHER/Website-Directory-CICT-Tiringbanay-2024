@@ -1,5 +1,3 @@
-import Header from "../components/Header"
-import { chopsic } from "../layout"
 import groups from "/src/data/groups"
 import Image from 'next/image'
 import Link from 'next/link'
@@ -23,7 +21,6 @@ export default function GroupingsPage() {
                 quality={100}
             />
 
-            <Header font={chopsic.variable} />
             <main className="h-screen flex flex-col w-screen relative z-10  overflow-y-scroll">
                 {/* Groupings */}
                 <h1 className="mt-32 mb-8 md:mt-32 md:mb-8  text-[40px] md:text-[60px] font-chopsic font-bold text-center">Groupings</h1>
