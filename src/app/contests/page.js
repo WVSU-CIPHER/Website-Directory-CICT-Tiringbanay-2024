@@ -149,5 +149,3 @@ function ContestsOptionPicker() {
         </div>
     )
 }
-
-{/* <input type="radio" value={contest} key={index} className={`focus:bg-[#5A8070]  focus:ring-[#7AD7C9] focus:ring-2  duration-100 h-full rounded-md uppercase font-semibold px-[8px] py-[4px] text-[16px] text-nowrap`} /> */ }
