@@ -1,19 +1,17 @@
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 
+// Fonts
 const poppins = Poppins({
   weight: ["400", "900"],
   variable: "--font-poppins",
   subsets: ["latin"],
 });
 
+// Navigations
+import { navigations } from "@/data/navigations";
+
 export default function Header() {
-  const navigations = [
-    { name: "guidelines", href: "/guidelines" },
-    { name: "programme", href: "/programme" },
-    { name: "contest", href: "/contests" },
-    { name: "groupings", href: "/groupings" },
-  ];
 
   return (
     <div className="w-full z-[999] fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md">

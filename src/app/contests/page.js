@@ -21,18 +21,15 @@ import { ragList } from '@/data/contests';
 import { contestList } from '@/data/contests';
 
 
+// Navigations
+import { navigations } from '@/data/navigations';
+
 // Warning component icon
 import { WarningIcon } from '../components/icons/Warning';
 
 
 // To suit the contest layout, we could use the header from the components tho
 function ContestsHeader() {
-    const navigations = [
-        { name: "guidelines", href: "/guidelines" },
-        { name: "programme", href: "/programme" },
-        { name: "contest", href: "/contests" },
-        { name: "groupings", href: "/groupings" },
-    ];
 
     return (
         <div className="w-full fixed z-[100]  top-0 right-0 flex flex-col px-[64px] py-[32px]">
