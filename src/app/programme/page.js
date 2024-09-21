@@ -50,13 +50,13 @@ export default function ProgrammePage() {
                                 <h1 className={`${chopsic.className} text-[24px]`}>{morningTitle}</h1>
                                 {/* timeline */}
                                 <div className="flex flex-col w-full gap-2">
-                                    <ProgrammeItem program={morningProgramFlow[0]} id="a" defaultChecked={true} name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[1]} id="b" name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[2]} id="c" name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[3]} id="d" name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[4]} id="e" name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[5]} id="f" name="morning-program" />
-                                    <ProgrammeItem program={morningProgramFlow[6]} id="g" name="morning-program" />
+                                    <ProgrammeItem program={morningProgramFlow[0]} id="a" defaultChecked={true} name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[1]} id="b" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[2]} id="c" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[3]} id="d" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[4]} id="e" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[5]} id="f" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[6]} id="g" name="program" />
 
                                 </div>
                             </div>
@@ -67,13 +67,13 @@ export default function ProgrammePage() {
                                 <h1 className={`${chopsic.className} text-[24px]`}>{afternoonTitle}</h1>
                                 {/* timeline */}
                                 <div className="flex flex-col w-full gap-2 text-white">
-                                    <ProgrammeItem program={afternoonProgramFlow[0]} id="h" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[1]} id="i" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[2]} id="j" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[3]} id="k" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[4]} id="l" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[5]} id="m" name="afternoon-program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[6]} id="n" name="afternoon-program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[0]} id="h" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[1]} id="i" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[2]} id="j" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[3]} id="k" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[4]} id="l" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[5]} id="m" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[6]} id="n" name="program" />
                                 </div>
 
                             </div>
