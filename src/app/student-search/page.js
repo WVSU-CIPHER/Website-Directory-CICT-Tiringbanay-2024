@@ -1,5 +1,6 @@
-import Search from "../components/StudentSearch"
-
+import StudentSearch from "../components/StudentSearch"
+import bg from "/public/assets/images/background.png"
+import Image from "next/image"
 
 export default function StudentsSearchPage() {
 
@@ -7,15 +8,22 @@ export default function StudentsSearchPage() {
 
     return (
 
-        <>
+        <div className="h-auto">
+            <Image
+                src={bg}
+                alt="Background"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+            />
 
 
             {/*  */}
-            <section className="bg-red-400 md:mt-28">
+            <section className="mt-28 ">
 
-                <Search />
+                <StudentSearch />
             </section>
-        </>
+        </div>
     )
 
 }

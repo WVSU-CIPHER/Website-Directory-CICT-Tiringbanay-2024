@@ -3,9 +3,6 @@ import { FaChevronLeft } from "react-icons/fa";
 import Image from "next/image"
 import bg from '/public/assets/images/background.png'
 import Link from 'next/link'
-import group from "@/data/groups"
-import students from "@/data/students";
-import { logStudentsInGroup } from "@/app/student-search/studentLogger"
 import StudentList from '@/app/components/StudentList'
 
 export default function GroupDetails({ params }) {
