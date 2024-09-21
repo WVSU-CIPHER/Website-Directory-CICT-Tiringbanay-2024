@@ -21,7 +21,7 @@ const groups = [
     {
         name: "Parzival",
         key: 1,
-        image: parvizal,
+        image: parzival,
         title: "Parzival's Commanders",
         description: "Parzival's Commanders are the elite tacticians of the OASIS, leading with unparalleled wisdom and bravery. They are the vanguard of the rebellion, always ready to dive into the heart of danger to protect the virtual realm and its inhabitants.",
         startIndex: 0,
