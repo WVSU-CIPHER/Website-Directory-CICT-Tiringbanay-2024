@@ -1,11 +1,9 @@
-
-import Header from "../../components/Header"
-import { chopsic } from "../../layout"
 import groupData from "/src/data/groups"
 import { FaChevronLeft } from "react-icons/fa";
 import Image from "next/image"
 import bg from '/public/assets/images/background.png'
 import Link from 'next/link'
+import StudentList from '@/app/components/StudentList'
 
 export default function GroupDetails({ params }) {
 
@@ -14,7 +12,6 @@ export default function GroupDetails({ params }) {
 
     return (
         <>
-            <Header font={chopsic.variable} />
 
             <div className="flex flex-col items-center bg-red-300 relative
             h-auto md:h-screen overflow-hidden
@@ -38,7 +35,7 @@ export default function GroupDetails({ params }) {
 
 
                 {/* ABOUT THE TEAM */}
-                <div className="mt-32  bg-[rgb(1,0,4)]/60 backdrop-blur-md
+                <div className="mt-24  bg-[rgb(1,0,4)]/60 backdrop-blur-md
                 max-w-[90vw] h-fit relative z-10
                 flex flex-col items-center md:flex-row
                 px-8 md:px-10 pb-8 pt-2 md:pb-0 md:pt-0 rounded-lg
@@ -57,7 +54,7 @@ export default function GroupDetails({ params }) {
 
                     <div className=" flex flex-col justify-center text-center md:text-left md:pl-10">
                         {/* Group Details {group.name} */}
-                        {/* Key {group.key}  */}
+                        {/* Key {group.key - 1} */}
                         <h1 className="text-2xl md:text-3xl text-white font-bold font-chopsic">{group.title}</h1>
                         <p className="mt-8 font-poppins text-base">{group.description}</p>
 
@@ -71,9 +68,9 @@ export default function GroupDetails({ params }) {
                 </div >
                 {/* GRUNTERS LIST */}
                 <div className="
-                relative z-10 flex flex-col mt-10 mb-10 px-10 py-8 rounded-lg
+                relative z-10 flex flex-col mt-10 mb-10 p-6 md:px-10 md:py-8 rounded-lg
                  bg-[rgb(1,0,4)]/60 backdrop-blur-md
-                 w-[90vw] h-fit
+                 w-[80%] h-fit
                  
                 ">
 
@@ -82,55 +79,13 @@ export default function GroupDetails({ params }) {
                         Grunters
                     </h2>
 
-                    <div className="overflow-y-auto  h-auto max-h-[250px] ">
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
-                        <p>
-                            test
-                        </p>
+                    <div className="  h-fit">
+
+
+                        <StudentList groupKey={group.key} />
+
+
+
                     </div>
 
                 </div>

@@ -10,9 +10,6 @@ const poppins = Poppins({
     subsets: ['latin'],
 });
 
-
-
-
 export default function GuidelinesPage() {
     return (
         <main>
@@ -26,7 +23,7 @@ export default function GuidelinesPage() {
                     <div className="text-white flex flex-col mx-auto sm:mx-0">
                         <div className="font-chopsic flex justify-center sm:justify-start text-[24px] uppercase items-center  tracking-widest">rules and regulations</div>
                         <div className={`${poppins.className} leading-6 pt-8 list-decimal justify-center `}>
-                            <li>All participants must be current students and/or faculty of West Visayas State University's College of Information and Communications  Technology.  </li>
+                            <li>All participants must be current students and/or faculty of West Visayas State University&#39;s College of Information and Communications  Technology.  </li>
                             <li>All CICTzens are encouraged to attend the event; hence, sanctions  will be imposed on students who will not attend (except for those with  valid excuses). </li>
                             <li>In the morning session, second-year to fourth-year students should  wear their TYPE B uniform, while first-year students can wear  ORANGE shirts. </li>
                             <li>In the afternoon session, all students can wear their Ready Player  One-themed outfits, WHILE sticking to the color choice of their team. </li>
@@ -50,8 +47,7 @@ export default function GuidelinesPage() {
                     </div>
                 </div>
 
-                {/* Added footer */}
-                <Footer />
+
 
             </div>
 
