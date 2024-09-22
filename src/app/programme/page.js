@@ -34,7 +34,7 @@ export default function ProgrammePage() {
                     quality={100}
                 />
 
-                <div className="relative w-full h-full flex flex-col overflow-y-scroll">
+                <div className="relative w-full h-full flex flex-col overflow-y-scroll gap-4">
 
                     <div className=" lg:pb-2 items-center justify-center flex flex-col w-full  md:w-[90%] mx-auto pt-[90px]">
                         <div className="py-[64px]">
