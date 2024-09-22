@@ -21,17 +21,15 @@ import { ragList } from '@/data/contests';
 import { contestList } from '@/data/contests';
 
 
-// Navigations
-import { navigations } from '@/data/navigations';
 
 // Warning component icon
 import { WarningIcon } from '../components/icons/Warning';
 
 
-
 export default function ContestsPage() {
     return (
         <div>
+
             {/* Content */}
             <div className="h-screen w-screen overflow-hidden">
                 {/* Background */}
@@ -59,13 +57,13 @@ export default function ContestsPage() {
                         </div>
                         {/* Cards for rag content */}
                         <div className="flex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200]">
-                            <div className="uppercase w-full flex flex-col gap-4 mb-4 md:mb-0 md:justify-between md:gap-0  text-center md:text-left z-[200]">
+                            <div className="uppercase w-full flex flex-col gap-4 mb-4 md:mb-0 md:justify-between md:gap-0  text-center md:text-left">
                                 <h1 className={`${chopsic.className} text-[24px] `}>sugilanon: professional development</h1>
                                 <p className="uppercase">top prize: 0 points</p>
                             </div>
 
                             {/* Objective card */}
-                            <div className="w-full  md:rounded-2xl px-[24px] py-[24px] sm:px-[32px] sm:py-[32px] md:px-[64px] h-fit md:py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200]">
+                            <div className="w-full  md:rounded-2xl px-[24px] py-[24px] sm:px-[32px] sm:py-[32px] md:px-[64px] h-fit md:py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 ">
                                 {/* timeline */}
                                 <h1 className={`${chopsic.className} text-[24px]`}>objectives</h1>
                                 <div className="flex flex-col w-full gap-1">
@@ -80,7 +78,7 @@ export default function ContestsPage() {
                             </div>
 
                             {/* Objective card */}
-                            <div className="w-full  md:rounded-2xl px-[24px] py-[24px] sm:px-[32px] sm:py-[32px] md:px-[64px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200]">
+                            <div className="w-full  md:rounded-2xl px-[24px] py-[24px] sm:px-[32px] sm:py-[32px] md:px-[64px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 ">
                                 {/* timeline */}
                                 <h1 className={`${chopsic.className} text-[24px]`}>Rules and Regulations</h1>
                                 <div className="flex flex-col w-full gap-1">
@@ -99,7 +97,6 @@ export default function ContestsPage() {
 
             </div>
 
-
         </div>
     );
 
@@ -112,7 +109,7 @@ export default function ContestsPage() {
 
 function RulesAndGuidelinesPDF() {
     return (
-        <div className="flex w-fit items-center gap-6 rounded-md p-4 bg-black/50 backdrop-blur-sm max-w-full mx-auto h-fit z-[200]">
+        <div className="flex w-fit items-center gap-6 rounded-md p-4 bg-black/50 backdrop-blur-sm max-w-full mx-auto h-fit">
 
             <WarningIcon />
             <div className="flex flex-col gap-1">
@@ -136,16 +133,26 @@ function RulesAndGuidelinesPDF() {
 
 function ContestsOptionPicker() {
     return (
-        <div className="relative w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md max-w-full overflow-hidden z-[200]">
+        <div className="relative w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md max-w-full overflow-hidden">
             <div className="flex gap-[16px] py-[4px] w-full overflow-x-auto scrollbar scrollbar-thumb-white scrollbar-track-[#5D6D5C]">
-                {contestList.map((contest, index) => (
-                    <div className="" key={index}>
-                        <input type="radio" id={contest} name="contest" value={contest} key={index} className="hidden peer" />
-                        <label for={contest} className="uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md border border-transparent peer-checked:bg-[#5A8070] duration-200 cursor-pointer peer-checked:border-[#7AD7C9] text-nowrap"><div className="block">{contest}</div></label>
-                    </div>
-
-                ))}
+                <ContestItem contest={contestList[0]} defaultChecked={true} id="a" name="contest" />
+                <ContestItem contest={contestList[1]} id="b" name="contest" />
+                <ContestItem contest={contestList[2]} id="c" name="contest" />
+                <ContestItem contest={contestList[3]} id="d" name="contest" />
+                <ContestItem contest={contestList[4]} id="e" name="contest" />
+                <ContestItem contest={contestList[5]} id="f" name="contest" />
+                <ContestItem contest={contestList[6]} id="g" name="contest" />
             </div>
+        </div>
+    )
+}
+
+
+function ContestItem({ contest, defaultChecked, id, name }) {
+    return (
+        <div className="">
+            <input type="radio" defaultChecked={defaultChecked ?? false} id={id} name={name} value={contest} className="hidden peer" />
+            <label for={id} className="uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md border border-transparent peer-checked:bg-[#5A8070] duration-200 cursor-pointer peer-checked:border-[#7AD7C9] text-nowrap"><div className="block">{contest}</div></label>
         </div>
     )
 }
