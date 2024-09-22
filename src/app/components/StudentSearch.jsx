@@ -68,7 +68,7 @@ export default function StudentSearchAndTable() {
         <FaSearchengin className="hidden md:block" />
         Search Gunter:
       </h1>
-      <div className="w-full max-w-6xl mx-auto py-5 px-5 bg-[rgb(1,0,4)]/60 backdrop-blur-md relative">
+      <div className="w-full max-w-6xl mx-auto py-5 px-5 bg-[rgb(1,0,4)]/80 backdrop-blur-md relative rounded-lg">
         <div className="relative mb-6">
           <input
             type="search"
