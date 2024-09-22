@@ -25,8 +25,8 @@ export default function Footer() {
             </h1>
             <p className="text-md">
               &copy;{" "}
-              <span className={`${poppins.className}  uppercase`}>
-                wvsu cipher 2024
+              <span className={`${poppins.className}`}>
+                WVSU CIPHER 2024. All Rights Reserved.
               </span>
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
                   <span
                     className={`${poppins.className} font-md text-[14px] hover:text-[#7AD7CA] duration-100`}
                   >
-                    Alliyah Santos
+                    Aliyah Santos
                   </span>
                 </Link>
               </div>
@@ -96,7 +96,7 @@ export default function Footer() {
                   <span
                     className={`${poppins.className} font-md text-[14px] hover:text-[#7AD7CA] duration-100`}
                   >
-                    Meiro Villareal
+                    Ken Meiro Villareal
                   </span>
                 </Link>
               </div>
