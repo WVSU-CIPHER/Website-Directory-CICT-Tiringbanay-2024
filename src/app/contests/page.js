@@ -45,7 +45,7 @@ export default function ContestsPage() {
 
                 {/* overscroll-y-scroll to cater scrolling on y axis */}
                 <div className=" w-full h-full flex flex-col overflow-y-scroll relative gap-4">
-                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px] gap-[32px]">
+                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[128px] gap-[32px]">
                         <div className=" flex flex-col max-w-full w-full gap-[32px] ">
 
                             <h1 className={`${chopsic.className} text-[40px] text-center`}>
