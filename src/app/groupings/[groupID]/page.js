@@ -4,6 +4,8 @@ import Image from "next/image"
 import bg from '/public/assets/images/background.png'
 import Link from 'next/link'
 import StudentList from '@/app/components/StudentList'
+import Footer from "../../components/Footer"
+
 
 export default function GroupDetails({ params }) {
 
@@ -13,8 +15,8 @@ export default function GroupDetails({ params }) {
     return (
         <>
 
-            <div className="flex flex-col items-center bg-red-300 relative
-            h-auto md:h-screen overflow-hidden
+            <div className="mb-10 flex flex-col items-center relative
+            h-auto overflow-hidden
             ">
                 <Image
                     src={bg}
@@ -90,6 +92,7 @@ export default function GroupDetails({ params }) {
 
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

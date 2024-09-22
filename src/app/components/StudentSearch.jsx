@@ -63,7 +63,7 @@ export default function StudentSearchAndTable() {
 
   return (
     // WHOLE CONTAINER
-    <div className="relative">
+    <div className="relative mb-10">
       <h1 className="font-chopsic text-[30px] md:text-[60px] flex items-center justify-center">
         <FaSearchengin className="hidden md:block" />
         Search Gunter:
