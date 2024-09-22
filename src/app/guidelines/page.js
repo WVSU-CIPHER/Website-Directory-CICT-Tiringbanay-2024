@@ -1,4 +1,7 @@
+
+
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Poppins } from '@next/font/google';
 
 const poppins = Poppins({

@@ -2,6 +2,7 @@ import groups from "/src/data/groups"
 import Image from 'next/image'
 import Link from 'next/link'
 import bg from '/public/assets/images/background.png'
+import Footer from "../components/Footer"
 
 export default function GroupingsPage() {
 
@@ -55,10 +56,9 @@ export default function GroupingsPage() {
                             </div>
                         )
                     })}
-
-
-
                 </section>
+                {/* Added footer */}
+                <Footer />
             </main>
         </div>
     )

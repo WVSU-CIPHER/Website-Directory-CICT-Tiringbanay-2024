@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Link from "next/link";
 import bg from "/public/assets/images/background.png"
 import Image from 'next/image';
 
@@ -14,6 +13,9 @@ const poppins = Poppins({
     subsets: ["latin"],
 });
 
+// Footer component
+import Footer from '../components/Footer';
+
 
 // Data for contests page
 import { objectiveList } from '@/data/contests';
@@ -21,17 +23,15 @@ import { ragList } from '@/data/contests';
 import { contestList } from '@/data/contests';
 
 
-// Navigations
-import { navigations } from '@/data/navigations';
 
 // Warning component icon
 import { WarningIcon } from '../components/icons/Warning';
 
 
-
 export default function ContestsPage() {
     return (
         <div>
+
             {/* Content */}
             <div className="h-screen w-screen overflow-hidden">
                 {/* Background */}
@@ -44,8 +44,8 @@ export default function ContestsPage() {
                 />
 
                 {/* overscroll-y-scroll to cater scrolling on y axis */}
-                <div className="lg:pb-2 w-full h-full flex flex-col overflow-y-scroll relative">
-                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px] gap-[32px]">
+                <div className=" w-full h-full flex flex-col overflow-y-scroll relative gap-4">
+                    <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[128px] gap-[32px]">
                         <div className=" flex flex-col max-w-full w-full gap-[32px] ">
 
                             <h1 className={`${chopsic.className} text-[40px] text-center`}>
@@ -95,10 +95,11 @@ export default function ContestsPage() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Added footer */}
+                    <Footer />
                 </div>
-
             </div>
-
 
         </div>
     );
@@ -138,14 +139,24 @@ function ContestsOptionPicker() {
     return (
         <div className="relative w-fit mx-auto px-[8px] py-[8px] bg-[#5D6D5C] rounded-md max-w-full overflow-hidden">
             <div className="flex gap-[16px] py-[4px] w-full overflow-x-auto scrollbar scrollbar-thumb-white scrollbar-track-[#5D6D5C]">
-                {contestList.map((contest, index) => (
-                    <div className="" key={index}>
-                        <input type="radio" id={contest} name="contest" value={contest} key={index} className="hidden peer" />
-                        <label for={contest} className="uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md border border-transparent peer-checked:bg-[#5A8070] duration-200 cursor-pointer peer-checked:border-[#7AD7C9] text-nowrap"><div className="block">{contest}</div></label>
-                    </div>
-
-                ))}
+                <ContestItem contest={contestList[0]} defaultChecked={true} id="a" name="contest" />
+                <ContestItem contest={contestList[1]} id="b" name="contest" />
+                <ContestItem contest={contestList[2]} id="c" name="contest" />
+                <ContestItem contest={contestList[3]} id="d" name="contest" />
+                <ContestItem contest={contestList[4]} id="e" name="contest" />
+                <ContestItem contest={contestList[5]} id="f" name="contest" />
+                <ContestItem contest={contestList[6]} id="g" name="contest" />
             </div>
+        </div>
+    )
+}
+
+
+function ContestItem({ contest, defaultChecked, id, name }) {
+    return (
+        <div className="">
+            <input type="radio" defaultChecked={defaultChecked ?? false} id={id} name={name} value={contest} className="hidden peer" />
+            <label for={id} className="uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md border border-transparent peer-checked:bg-[#5A8070] duration-200 cursor-pointer peer-checked:border-[#7AD7C9] text-nowrap"><div className="block">{contest}</div></label>
         </div>
     )
 }
