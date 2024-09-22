@@ -1,6 +1,7 @@
 import StudentSearch from "../components/StudentSearch"
 import bg from "/public/assets/images/background.png"
 import Image from "next/image"
+import Footer from "../components/Footer"
 
 export default function StudentsSearchPage() {
 
@@ -22,6 +23,7 @@ export default function StudentsSearchPage() {
             <section className="mt-28 ">
 
                 <StudentSearch />
+                <Footer />
             </section>
         </div>
     )

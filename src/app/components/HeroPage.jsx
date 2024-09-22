@@ -122,7 +122,7 @@ export default function HeroPage() {
         </div>
 
         <div className="flex flex-row justify-center items-center">
-          <div className="flex flex-row items-center"> 
+          <div className="flex flex-row items-center">
             <div className="flex flex-col items-center">
               <Image
                 className="bg-cover bg-center bg-no-repeat"
@@ -132,7 +132,7 @@ export default function HeroPage() {
                 alt="Guest Speaker"
               />
               <div className="uppercase font-chopsic text-[18px] sm:text-[22px] tracking-[0.72px] px-12 text-center">
-              Dax Gabriel Celis
+                Dax Gabriel Celis
               </div>
             </div>
             <div className="flex flex-col ml-20">

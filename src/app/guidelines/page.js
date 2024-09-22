@@ -16,10 +16,10 @@ export default function GuidelinesPage() {
             <Header />
             <div className="bg-tiringbanay "></div>
 
-            <div className="relative">
-                <div className="uppercase font-chopsic text-center pb-16 mt-[155px] px-14 text-[24px] sm:text-[40px] tracking-[1.6px] ">general rules and guidelines</div>
+            <div className="relative text-center md:text-left">
+                <div className="uppercase font-chopsic text-center pb-10 md:pb-16 mt-32 md:mt-[155px] px-14 text-[24px] sm:text-[40px] tracking-[1.6px] ">general rules and guidelines</div>
 
-                <div className="flex flex-col w-full sm:max-w-[1440px] py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-1">
+                <div className="flex flex-col w-full sm:max-w-[1440px] py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl bg-[rgb(1,0,4)]/80 backdrop-blur-md z-1">
                     <div className="text-white flex flex-col mx-auto sm:mx-0">
                         <div className="font-chopsic flex justify-center sm:justify-start text-[24px] uppercase items-center  tracking-widest">rules and regulations</div>
                         <div className={`${poppins.className} leading-6 pt-8 list-decimal justify-center `}>
@@ -35,7 +35,7 @@ export default function GuidelinesPage() {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-full sm:max-w-[1440px] mb-10 mt-0 sm:mt-16 py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-1">
+                <div className=" flex flex-col w-full sm:max-w-[1440px] my-10 sm:mt-16 py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md bg-[rgb(1,0,4)]/80 backdrop-blur-md z-1">
                     <div className="text-white flex flex-col mx-auto sm:mx-0">
                         <div className="font-chopsic flex justify-center sm:justify-start text-[24px] uppercase items-center tracking-widest">scoring and awarding system</div>
                         <div className={`${poppins.className} mt-8 mb-6 leading-6 list-decimal `}>
@@ -50,7 +50,8 @@ export default function GuidelinesPage() {
 
 
             </div>
-
+            <Footer />
         </main>
+
     )
 }

@@ -37,10 +37,10 @@ export default function ProgrammePage() {
                 <div className="relative w-full h-full flex flex-col overflow-y-scroll gap-4">
 
                     <div className=" lg:pb-2 items-center justify-center flex flex-col w-full  md:w-[90%] mx-auto pt-[90px]">
-                        <div className="py-[64px]">
+                        <div className="py-8 md:py-[64px]">
 
                             <h1 className={`${chopsic.className} text-[40px] text-center`}>
-                                program
+                                programme
                             </h1>
                         </div>
 
@@ -48,7 +48,7 @@ export default function ProgrammePage() {
                         <div className="flex flex-col gap-0 md:gap-[64px] w-full z-[200]">
 
                             {/* Morning session */}
-                            <div className="w-full  md:rounded-2xl px-[64px] h-fit py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200]">
+                            <div className="w-full  md:rounded-2xl px-10 md:px-[64px] h-fit py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200]">
                                 {/* Header */}
                                 <h1 className={`${chopsic.className} text-[24px]`}>{morningTitle}</h1>
                                 {/* timeline */}
@@ -65,7 +65,7 @@ export default function ProgrammePage() {
                             </div>
 
                             {/* Afternoon session */}
-                            <div className="w-full  md:rounded-2xl px-[64px] h-fit py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200] text-white">
+                            <div className="w-full  md:rounded-2xl px-10 md:px-[64px] h-fit py-[32px] gap-[32px] backdrop-blur-md flex flex-col bg-black/50 z-[200] text-white">
                                 {/* Header */}
                                 <h1 className={`${chopsic.className} text-[24px]`}>{afternoonTitle}</h1>
                                 {/* timeline */}
