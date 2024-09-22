@@ -75,22 +75,22 @@ export default function Header() {
             id="mobile-menu"
           >
             <div className="px-2 py-8 space-y-5 sm:px-3 w-full flex-col flex">
-              <Link onClick={() => setIsOpen(false)} href="/">
+              <Link onClick={() => setShowMenu(false)} href="/">
                 <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
                   Home
                 </span>
               </Link>
-              <Link onClick={() => setIsOpen(false)} href="/guidelines">
+              <Link onClick={() => setShowMenu(false)} href="/guidelines">
                 <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
                   Guidelines
                 </span>
               </Link>
-              <Link onClick={() => setIsOpen(false)} href="/programme">
+              <Link onClick={() => setShowMenu(false)} href="/programme">
                 <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
                   Programme
                 </span>
               </Link>
-              <Link onClick={() => setIsOpen(false)} href="/contests">
+              <Link onClick={() => setShowMenu(false)} href="/contests">
                 <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
                   Contest
                 </span>
