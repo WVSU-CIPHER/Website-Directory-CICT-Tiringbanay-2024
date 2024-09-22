@@ -14,7 +14,8 @@ const poppins = Poppins({
 export default function HeroPage() {
   return (
     <>
-      <div className="bg-tiringbanay"></div>
+      {/* bg-cover to cater the whole screen */}
+      <div className="bg-tiringbanay bg-cover "></div>
 
       <div className="relative">
         <div className="mt-[180px] sm:mt-52 sm:ml-16 ml-4 flex flex-col gap-4">
