@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Link from "next/link";
 import bg from "/public/assets/images/background.png"
 import Image from 'next/image';
 
@@ -13,6 +12,9 @@ const poppins = Poppins({
     variable: "--font-poppins",
     subsets: ["latin"],
 });
+
+// Footer component
+import Footer from '../components/Footer';
 
 
 // Data for contests page
@@ -42,7 +44,7 @@ export default function ContestsPage() {
                 />
 
                 {/* overscroll-y-scroll to cater scrolling on y axis */}
-                <div className="lg:pb-2 w-full h-full flex flex-col overflow-y-scroll relative">
+                <div className=" w-full h-full flex flex-col overflow-y-scroll relative gap-4">
                     <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[90px] gap-[32px]">
                         <div className=" flex flex-col max-w-full w-full gap-[32px] ">
 
@@ -93,8 +95,10 @@ export default function ContestsPage() {
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    {/* Added footer */}
+                    <Footer />
+                </div>
             </div>
 
         </div>

@@ -13,6 +13,9 @@ const poppins = Poppins({
     subsets: ["latin"],
 });
 
+// Footer component
+import Footer from "../components/Footer";
+
 // Import data for this page
 import { morningProgramFlow, afternoonProgramFlow, morningTitle, afternoonTitle } from "@/data/programs";
 
@@ -79,6 +82,8 @@ export default function ProgrammePage() {
                             </div>
                         </div>
                     </div>
+                    {/* Added footer */}
+                    <Footer />
                 </div>
 
             </div>
@@ -105,19 +110,3 @@ function ProgrammeItem({ program, defaultChecked, id, name }) {
 }
 
 
-
-// Old rendering of program flow
-{/* {morningProgramFlow.map((program, index) => (
-
-                                        <button key={index} className="flex justify-between items-center w-full  duration-100 focus:bg-white text-white  focus:text-black rounded-full">
-                                            <div className="max-w-[90%] gap-[32px] grid grid-cols-2 md:flex md:justify-between  text-left w-full">
-
-                                                <p className="px-[12px]">{program.title}</p>
-
-                                                <div className="md:w-1/2 text-left ">
-                                                    <p className="">{program.time}</p>
-
-                                                </div>
-                                            </div>
-                                        </button>
-                                    ))} */}
