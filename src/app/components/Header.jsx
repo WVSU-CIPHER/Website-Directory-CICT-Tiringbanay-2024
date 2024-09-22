@@ -30,7 +30,7 @@ export default function Header() {
         </Link>
 
         {/* hide on md screens, show on lg screens */}
-        <div className="hidden lg:flex   links text-[14px]  items-center gap-[48px]">
+        <div className="hidden md:flex   links text-[14px]  items-center gap-[48px]">
           {navigations.map((navigation, index) => (
             <Link key={index} href={navigation.href}>
               <span className={`${poppins.className} text-slate-100 font-sans`}>
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
         {/* Show hamburger menu for mobile */}
-        <div className="lg:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button
             onClick={() => setShowMenu(!showMenu)}
             type="button"
@@ -71,7 +71,7 @@ export default function Header() {
       >
         {(ref) => (
           <div
-            className="lg:hidden absolute w-screen top-0 left-0 px-10 border-b border-b-[#7AD7CA] backdrop-blur-lg"
+            className="md:hidden absolute w-screen top-0 left-0 px-10 border-b border-b-[#7AD7CA] bg-[#141319]"
             id="mobile-menu"
           >
             <div className="px-2 py-8 space-y-5 sm:px-3 w-full flex-col flex">
