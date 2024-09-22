@@ -23,7 +23,7 @@ export default function Header() {
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <div className="w-full z-[100] fixed top-0 right-0 flex flex-col px-[64px] py-[32px]">
+    <div className="w-full fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md z-[300]">
       <nav className="max-w-[1440px] mx-auto w-full flex items-center justify-between">
         <Link href="/">
           <span className="font-chopsic">tiringbanay</span>
