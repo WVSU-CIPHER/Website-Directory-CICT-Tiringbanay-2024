@@ -49,13 +49,4 @@ https://vt.tiktok.com/ZS2kFGdS4/
 
 ## Criteria for Judging
 
-| Criteria         | Percentage |
-|------------------|------------|
-| Acting           | 30%        |
-| Creativity       | 40%        |
-| Wittiness        | 20%        |
-| Audience Impact  | 10%        |
-| **Total**        | **100%**   |
-
-
 

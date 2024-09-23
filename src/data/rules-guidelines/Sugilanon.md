@@ -3,6 +3,7 @@ title: "Sugilanon"
 numberOfParticipants: "0"
 ---
 
+
 ## Objectives
 
 - To provide students with knowledge and insights on career planning and development specific to the Information and Communications Technology (ICT) field.
@@ -17,3 +18,4 @@ numberOfParticipants: "0"
 2. Attendees are expected to maintain proper decorum during the entire talk.
 3. Students are encouraged to actively listen and participate in the talk by asking relevant questions during the designated open forum session.
 4. Any violations of the rules or guidelines may result in consequences such as the loss of participation points or further disciplinary action.
+

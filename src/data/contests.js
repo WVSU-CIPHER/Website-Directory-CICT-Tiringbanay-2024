@@ -13,4 +13,4 @@ export const ragList = [
     "Any violations of the rules or guidelines may result in consequences such as the loss of participation points or further disciplinary action."
 ]
 
-export const contestList = ["sugilanon", "meme-icry", "pixel fusion", "avatar banners", "cispitizens", "gunter cheers", "panakayon"]
+export const contestList = ["Sugilanon", "MEME-icry", "Pixel-Fusion", "Avatar-Banners", "ciSPITzens", "Gunter-Cheers", "Panakayon"]
