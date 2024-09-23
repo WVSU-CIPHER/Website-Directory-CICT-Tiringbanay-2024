@@ -1,12 +1,15 @@
 import Image from "next/image";
-import ContestsOptionPicker from "./ContestOptions";
-import ContestItem from "./ContestItem";
-import Footer from "../Footer";
-import bg from "../../../../public/assets/images/background.png";
-import { chopsic } from "@/app/layout";
-import { poppins } from "@/app/layout";
 
+import { chopsic } from "@/app/layout";
+import bg from "../../../../public/assets/images/background.png";
+
+// Page components
 import RulesAndGuidelinesPDF from "./ContestPDF";
+import ContestItem from "./ContestItem";
+import ContestsOptionPicker from "./ContestOptions";
+import Footer from "../Footer";
+
+// Data for this page
 import { contestList } from "@/data/contests";
 import { navigations } from "@/data/navigations";
 

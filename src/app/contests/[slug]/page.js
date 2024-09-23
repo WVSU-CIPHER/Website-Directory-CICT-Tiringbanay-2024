@@ -41,6 +41,7 @@ const components = [
 const MDXContent = dynamic(() => import('../../components/mdx/MdxContent'), { ssr: false });
 
 export default async function ContestDetails({ params }) {
+
     try {
         const ragList = await getAllRAG();
 
@@ -85,6 +86,6 @@ export default async function ContestDetails({ params }) {
         );
     } catch (error) {
         console.error("Error in ContestDetails:", error);
-        return <div>An error occurred while loading the content: {error.message}</div>;
+        return <div className="h-screen w-screen items-center justify-center text-red-500">An error occurred while loading the content: {error.message}</div>;
     }
 }

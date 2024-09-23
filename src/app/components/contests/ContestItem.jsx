@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { act } from "react";
 
 function ContestItem({ contest, href, currentPath }) {
   const active = "bg-[#5A8070] border-[#7AD7C9] border border-transparent";
