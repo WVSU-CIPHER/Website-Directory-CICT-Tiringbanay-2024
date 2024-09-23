@@ -56,13 +56,3 @@ numberOfParticipants: "0"
 
 # Criteria for Judging
 
-| Criteria             | Percentage |
-|----------------------|------------|
-| Creativity           | 30%        |
-| Theme Relevance      | 25%        |
-| Originality          | 20%        |
-| Technical Quality    | 15%        |
-| Impact Presentation  | 10%        |
-| **Total**            | **100%**   |
-
-

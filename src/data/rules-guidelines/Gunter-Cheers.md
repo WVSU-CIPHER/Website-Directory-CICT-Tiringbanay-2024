@@ -18,11 +18,5 @@ numberOfParticipants: "0"
 ## Criteria for Judging
 
 
-| Criteria                  | Percentage |
-|---------------------------|------------|
-| Synchronization & Clarity  | 40%        |
-| Creativity & Originality   | 40%        |
-| Overall Impact             | 20%        |
-| **Total**                  | **100%**   |
 
 

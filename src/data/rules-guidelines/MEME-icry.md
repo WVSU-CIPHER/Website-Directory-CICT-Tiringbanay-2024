@@ -25,11 +25,3 @@ To entertain and engage the audience by recreating popular scenes or media in a 
 
 ## Criteria for Judging
 
-| Criteria          | Percentage |
-|-------------------|------------|
-| Presentation      | 30%        |
-| Creativity        | 40%        |
-| Acting            | 20%        |
-| Audience Impact   | 10%        |
-| **Total**         | **100%**   |
-

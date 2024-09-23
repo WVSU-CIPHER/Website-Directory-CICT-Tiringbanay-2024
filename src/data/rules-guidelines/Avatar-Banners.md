@@ -30,13 +30,4 @@ numberOfParticipants: "0"
 ## Criteria for Judging
 
 
-| Criteria            | Percentage |
-|---------------------|------------|
-| Theme Relevance     | 30%        |
-| Sustainability      | 30%        |
-| Creativity          | 25%        |
-| Quality             | 15%        |
-| **Total**           | **100%**   |
-
-
 
