@@ -1,5 +1,5 @@
 import StudentSearch from "../components/StudentSearch"
-import bg from "/public/assets/images/background.png"
+import bg from "/public/assets/images/background.webp"
 import Image from "next/image"
 import Footer from "../components/Footer"
 
