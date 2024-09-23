@@ -1,5 +1,5 @@
 ---
-title: "Avatar Banners"
+title: "Avatar-Banners"
 numberOfParticipants: "0"
 ---
 
