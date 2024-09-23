@@ -7,11 +7,11 @@ function ContestItem({ contest, href, currentPath }) {
       <Link href={href}>
         <div
           className={
-            "uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md   duration-200 cursor-pointer  text-nowrap " +
+            "text-white uppercase font-semibold inline-flex items-center w-full p-2 h-full rounded-md   duration-200 cursor-pointer  text-nowrap " +
             active
           }
         >
-          <div className="block">{contest}</div>
+          <div className="block text-white">{contest}</div>
         </div>
       </Link>
     </div>

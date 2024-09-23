@@ -31,7 +31,9 @@ export default function ContestWrapper({ children }) {
         <div className=" w-full h-full flex flex-col overflow-y-scroll relative gap-4">
           <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[128px] gap-[32px]">
             <div className=" flex flex-col max-w-full w-full gap-[32px] ">
-              <h1 className={`${chopsic.className} text-[40px] text-center`}>
+              <h1
+                className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow`}
+              >
                 contests
               </h1>
 
@@ -72,7 +74,7 @@ export default function ContestWrapper({ children }) {
               </div>
             </div>
             {/* Cards for rag content */}
-            <div className="flex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200] backdrop-blur-md bg-black/50 rounded-xl">
+            <div className="text-white lex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200] backdrop-blur-md bg-black/50 rounded-xl">
               {/* <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div> */}
               {/* <Sugilanon /> */}
               {/* <AvatarBanner /> */}
