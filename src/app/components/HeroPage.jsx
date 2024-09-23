@@ -171,7 +171,7 @@ export default function HeroPage() {
                 `}>
                 Mobile Applications Lead - Architect
               </div>
-              <div className={`${poppins.className} font-light text-sm md:text-base text-center md:text-left`}>
+              <div className={`${poppins.className} font-light text-white text-sm md:text-base text-center md:text-left`}>
                 Software Development Manager and Mobile Applications Architect. SAFe certified scrum practitioner
                 with solid industry knowledge and experience. A people leader, career developer, and value creator.
               </div>
