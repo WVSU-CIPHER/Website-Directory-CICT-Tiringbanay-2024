@@ -4,6 +4,7 @@ import { React } from 'react';
 import Footer from '@/app/components/Footer';
 import ContestWrapper from '../components/contests/ContestWrapper';
 import SugilanonGuidelines from '../components/contests/guidelines/Sugilanon';
+import PanakayonGuidelines from '../components/contests/guidelines/PanakayonGuidelines';
 
 
 
@@ -11,7 +12,7 @@ export default async function ContestsPage() {
 
     return (
         <ContestWrapper>
-            <SugilanonGuidelines />
+            <PanakayonGuidelines />
         </ContestWrapper>
 
     );
