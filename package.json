@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
     "@next/font": "^14.2.9",
+    "@next/mdx": "^14.2.13",
+    "@types/mdx": "^2.0.13",
+    "fuse.js": "^7.0.0",
+    "gray-matter": "^4.0.3",
     "next": "^14.2.12",
+    "next-mdx-remote": "^5.0.0",
+    "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.3.0"
+    "react-icons": "^5.3.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "14.2.9",
-    "postcss": "^8.4.45",
-    "tailwindcss": "^3.4.10"
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12"
   }
 }

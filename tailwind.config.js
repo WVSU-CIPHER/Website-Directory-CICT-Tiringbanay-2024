@@ -15,14 +15,9 @@ module.exports = {
         chopsic: ['var(--font-chopsic)'],
         poppins: ['var(--font-poppins)'],
       },
-      backgroundImage: {
-        'sea2': 'url("https://images.unsplash.com/photo-1524704654690-b56c05c78a00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")',
-        'tiringbanay': "url('./src/app/public/assets/images/background.jpg')"
-      },
       boxShadow: {
-        'text-custom': '0 4px 8px rgba(129, 236, 222, 0.5)', //Blue shadow
+        'text-custom': '0 4px 8px rgba(129, 236, 222, 0.5)',
       },
-      // added drop shadow glow effect
       dropShadow: {
         glow: [
           "0 0px 20px rgba(255,255, 255, 0.35)",
