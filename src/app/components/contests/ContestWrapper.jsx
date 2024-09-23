@@ -69,7 +69,7 @@ export default function ContestWrapper({ children }) {
               </div>
             </div>
             {/* Cards for rag content */}
-            <div className="flex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200] backdrop-blur-md bg-black/50">
+            <div className="flex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200] backdrop-blur-md bg-black/50 rounded-xl">
               {/* <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div> */}
               {/* <Sugilanon /> */}
               {/* <AvatarBanner /> */}
