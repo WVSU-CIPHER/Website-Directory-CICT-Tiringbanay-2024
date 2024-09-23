@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import cictLogo from "../../../public/assets/images/logo-cict.png";
+import cictLogo from "../../../public/assets/images/logo-cict.webp";
 import { Poppins } from "@next/font/google";
 import Link from "next/link";
 import Footer from "./Footer";
@@ -34,8 +34,8 @@ export default function HeroPage() {
             A shift in reality
           </div>
           <div className="font-chopsic uppercase text-center md:text-left leading-10
-          tracking-[2.5px] text-2xl mx-[5%] md:mx-0
-          md:text-3xl lg:text-5xl
+          tracking-[2.5px] mx-[5%] md:mx-0
+          text-2xl md:text-3xl lg:text-5xl
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
           ">
             cict tiringbanay 2024
@@ -44,18 +44,18 @@ export default function HeroPage() {
 
         {/* Buttons */}
         <div
-          className={`${poppins.className} mt-8 flex flex-row gap-8 justify-center md:justify-start`}
+          className={`${poppins.className} mt-8 flex flex-row gap-8 justify-center md:justify-start text-white`}
         >
           <Link href="/groupings">
             <button className="flex uppercase h-[30px] bg-[#59958480] hover:bg-[#5D6D5C] px-4 py-1 items-center
             sm:place-items-start sm:pb-4 gap-[8px] rounded-lg
-            border-[1px] border-[#81ECDE] text-[14px] font-semibold
+            border-[1px] border-[#81ECDE] text-[14px]  font-semibold text-white
             ">
               Find your Group
             </button>
           </Link>
           <div
-            className="uppercase text-[14px] py-1 font-semibold tracking-wider cursor-pointer hover:underline hover:underline-offset-4 "
+            className="uppercase text-white text-[14px] py-1 font-semibold tracking-wider cursor-pointer hover:underline hover:underline-offset-4 "
             onClick={() =>
               document
                 .getElementById("rationale")
@@ -67,12 +67,19 @@ export default function HeroPage() {
         </div>
       </div>
 
+      {/* RATIONALE */}
+      {/* TODO: 
+      - put border radius in rationale and objectives
+      - guess speaker max-w-[90%] in small screen size
+      */}
       <div
         id="rationale"
-        className="flex flex-col py-6 mx-auto max-w-[95%]  backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-1 relative"
+        className="flex flex-col py-6 mx-auto max-w-[95%]  backdrop-blur-md  bg-[#010004d8] sm:bg-[#01000499] z-1 relative
+        rounded-lg md:rounded-xl 
+        "
       >
         <div className="text-white flex flex-col px-4 sm:px-8">
-          <div className="font-chopsic flex text-xl md:text-2xl uppercase items-center pb-5 tracking-widest
+          <div className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
           ">
             rationale
@@ -98,9 +105,11 @@ export default function HeroPage() {
       </div>
 
       {/* OBJECTIVES */}
-      <div className="flex flex-col w-full my-10 py-6 mx-auto max-w-[95%] backdrop-blur-md bg-[#010004d8] z-1 relative">
-        <div className="text-white flex flex-col px-8">
-          <div className="font-chopsic flex text-xl md:text-2xl uppercase items-center pb-5 tracking-widest
+      <div className="flex flex-col w-full my-10 py-6 mx-auto max-w-[95%] backdrop-blur-md bg-[#010004d8] z-1 relative
+      rounded-lg md:rounded-xl 
+      ">
+        <div className="text-white flex flex-col px-4 sm:px-8">
+          <div className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
           ">
             Objectives
@@ -130,7 +139,7 @@ export default function HeroPage() {
       </div>
 
       {/* GUEST SPEAKER */}
-      <div className="flex flex-col w-full sm:max-w-[900px] mb-10 mt-0 py-8 px-9 sm:mt-16 mx-auto rounded-none sm:rounded-2xl bg-[#010004d8] sm:bg-[#01000499] z-1 relative">
+      <div className="flex flex-col w-full h-fit max-w-[95%] md:max-w-[900px] mb-10 py-8 px-9  mx-auto rounded-lg md:rounded-xl bg-[#010004d8] z-1 relative">
         <div className="text-white flex flex-col px-8">
           <div className="font-chopsic text-center text-2xl md:text-3xl uppercase tracking-widest
           text-transparent bg-clip-text bg-gradient-to-br md:bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
@@ -139,22 +148,27 @@ export default function HeroPage() {
           </div>
         </div>
 
-        <div className="flex flex-row  justify-center items-center">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="flex flex-col w-full md:w-[30%] items-center">
+        <div className="flex flex-row  justify-center items-center h-fit">
+          <div className="flex flex-col md:flex-row items-center h-fit">
+            <div className="flex flex-col justify-center w-full md:w-[30%] items-center">
               <Image
                 className="bg-cover bg-center bg-no-repeat"
-                src="/assets/images/GuestSpeaker.png"
-                width={200}
-                height={200}
+                src="/assets/images/GuestSpeaker.webp"
+                width={220}
+                height={220}
                 alt="Guest Speaker"
               />
-              <div className={`${poppins.className} font-bold uppercase text-xl md:text-2xl `}>
+
+            </div>
+            <div className="flex flex-col justify-center w-[70%] md:ml-5 ">
+              <div className={`${poppins.className} font-bold uppercase text-xl text-center md:text-left md:text-2xl 
+                 text-transparent bg-clip-text bg-gradient-to-br md:bg-gradient-to-r from-[#81ECDE] to-[#59958480] drop-shadow
+                `}>
                 Dax Gabriel Celis
               </div>
-            </div>
-            <div className="flex flex-col w-[70%] md:ml-10">
-              <div className={`${poppins.className} uppercase font-bold text-zinc-300 md:text-slate-200 text-center py-3 md:py-0 md:text-left md:text-2xl md:pb-10`}>
+              <div className={`${poppins.className} uppercase font-bold text-zinc-300 text-center py-3 md:py-0 md:text-left md:text-lg
+                my-2
+                `}>
                 Mobile Applications Lead - Architect
               </div>
               <div className={`${poppins.className} font-light text-sm md:text-base text-center md:text-left`}>

@@ -118,7 +118,7 @@ const groups = [
         endIndex: 756
     },
     {
-        name: "Bot 101",
+        name: "Bot101",
         key: 12,
         image: bot101,
         title: "BOT 101 Battalion",

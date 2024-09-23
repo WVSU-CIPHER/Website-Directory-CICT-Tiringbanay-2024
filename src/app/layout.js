@@ -35,12 +35,14 @@ export const chopsic = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} ${chopsic.variable} antialiased`}
-      >
-        <Header font={chopsic.variable} />
-        {children}
+    <html lang="en" className="h-full">
+      <body className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} ${chopsic.variable} antialiased h-full`}>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow relative">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

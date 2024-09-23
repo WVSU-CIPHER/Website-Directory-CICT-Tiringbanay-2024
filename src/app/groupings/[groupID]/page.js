@@ -1,7 +1,7 @@
 import groupData from "/src/data/groups"
 import { FaChevronLeft } from "react-icons/fa";
 import Image from "next/image"
-import bg from '/public/assets/images/background.png'
+import bg from '/public/assets/images/background.webp'
 import Link from 'next/link'
 import StudentList from '@/app/components/StudentList'
 import Footer from "../../components/Footer"
@@ -57,7 +57,9 @@ export default function GroupDetails({ params }) {
                     <div className=" flex flex-col justify-center text-center md:text-left md:pl-10">
                         {/* Group Details {group.name} */}
                         {/* Key {group.key - 1} */}
-                        <h1 className="text-2xl md:text-3xl text-white font-bold font-chopsic">{group.title}</h1>
+                        <h1 className="text-2xl md:text-3xl font-bold font-chopsic
+                        text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow
+                        ">{group.title}</h1>
                         <p className="mt-8 font-poppins text-base">{group.description}</p>
 
                     </div>
@@ -77,7 +79,7 @@ export default function GroupDetails({ params }) {
                 ">
 
 
-                    <h2 className="font-chopsic text-xl font-bold mb-4">
+                    <h2 className="font-chopsic text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow">
                         Grunters
                     </h2>
 

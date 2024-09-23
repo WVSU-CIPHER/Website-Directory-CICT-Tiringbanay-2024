@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../../public/assets/images/logo-cict.png";
+import Logo from "../../../public/assets/images/logo-cict.webp";
 import { chopsic } from "../layout";
 import { Poppins } from "@next/font/google";
 import Link from "next/link";
