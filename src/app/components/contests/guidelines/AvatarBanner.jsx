@@ -1,12 +1,12 @@
 export default function AvatarBannerGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 text-white">
       <h1 className="text-3xl font-bold mb-6">
-        Banner Design Contest: Rules and Guidelines
+        Avatar Banners: Banner Making Contest Guidelines and Criteria
       </h1>
 
       {/* Rules and Guidelines Section */}
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -85,10 +85,6 @@ export default function AvatarBannerGuidelines() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Criteria for Judging</h2>
         {/* Insert criteria for judging here as needed */}
-        <p className="pl-6">
-          The judging criteria will be based on creativity, use of sustainable
-          materials, relevance to the theme, and overall presentation.
-        </p>
       </section>
     </article>
   );

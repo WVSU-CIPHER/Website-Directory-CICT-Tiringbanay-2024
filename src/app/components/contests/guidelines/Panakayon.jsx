@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function PanakayonGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Objective</h1>
+    <article className="container mx-auto px-4 py-8 text-white">
+      <h1 className="text-3xl font-bold mb-6">
+        Panakayon: Game Mechanics and Guidelines and Criteria
+      </h1>
 
-      <section className="mb-8">
+      <section className="mb-8text-white ">
+        <h2 className="text-2xl font-semibold mb-4">Objectives</h2>
         <div className="">
           To create opportunities for students to showcase their leadership,
           problem-solving, and socialization skills, promoting sportsmanship,
@@ -33,8 +36,8 @@ export default function PanakayonGuidelines() {
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">Point System</h2>
+      <section className="text-white">
+        <h2 className="text-white text-2xl font-semibold mb-4">Point System</h2>
         <ol className="list-disc pl-6 space-y-2">
           <li>
             <strong>Easter Egg</strong> (30 pts.) - If the team has completed
@@ -73,7 +76,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <h1 className="text-3xl font-bold my-6">Target Venues</h1>
+      <h1 className="text-white text-3xl font-bold my-6">Target Venues</h1>
       <ul className="list-disc pl-6 space-y-2">
         <li>Jubilee Park</li>
         <li>COM Gym</li>
@@ -84,8 +87,10 @@ export default function PanakayonGuidelines() {
       <h1 className="text-3xl font-bold my-6">Game Mechanics</h1>
 
       {/* Add each game section here */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">1.) I HEARD A RUMOR</h2>
+      <section className="text-white">
+        <h2 className="text-white text-2xl font-semibold mb-4">
+          1.) I HEARD A RUMOR
+        </h2>
         <div>
           <strong>Objective:</strong> Teams must pass the message with polvoron
           inside their mouth.
@@ -133,7 +138,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mt-4 mb-4">2.) CINEQUEST</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Study the pictures and try to guess their
@@ -175,7 +180,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4 mt-4">3.) TOWER OF CUP</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Safely remove the sheets of paper between
@@ -222,7 +227,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">BLOW THE PONG</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams must blow several ping pong balls to
@@ -270,7 +275,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">ANORAK’S HOOP RELAY</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Pass the hula hoop through the players'
@@ -316,7 +321,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">UNITY CUP</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams must transport a cup filled with
@@ -366,7 +371,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">MONOBLOCK ARRAY</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Move down a line using monoblock chairs,
@@ -421,7 +426,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">BRAIN TELEPATHY</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams must guess the object drawn by their
@@ -483,7 +488,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">AVATAR MIX AND MATCH</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Players must match the characters
@@ -509,7 +514,7 @@ export default function PanakayonGuidelines() {
           <li>There will be a time limit of 5 minutes.</li>
         </ol>
         <h3 className="text-lg font-semibold my-2">Scoring</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>
             <strong>Easter Egg</strong> (30 pts) - The team must sort the (5)
             actors into their avatars.
@@ -533,7 +538,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">FIX-IT!</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams must identify and correct errors in
@@ -576,7 +581,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">DETECTIVE CALEB</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams must identify the differences
@@ -601,7 +606,7 @@ export default function PanakayonGuidelines() {
           <li>There will be a time limit of 5 minutes.</li>
         </ol>
         <h3 className="text-lg font-semibold my-2">Scoring</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>
             <strong>Easter Egg</strong> (30 pts) - The team spotted a hidden
             Caleb from the image.
@@ -625,7 +630,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">HUMAN WHEEL</h2>
         <div className="mb-2">
           <strong>Objective:</strong> Teams will compete in a fun and
@@ -637,7 +642,7 @@ export default function PanakayonGuidelines() {
           <strong>Venue:</strong> Jubilee Park
         </div>
         <h3 className="text-lg font-semibold my-2">Mechanics</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>
             Each team consists of 2 groups with 4 players each (8 players
             total).
@@ -659,8 +664,8 @@ export default function PanakayonGuidelines() {
           </li>
           <li>There will be a time limit of 5 minutes.</li>
         </ol>
-        <h3 className="text-lg font-semibold my-2">Scoring</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <h3 className="text-lg font-semibold my-2 text-white">Scoring</h3>
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>
             <strong>Easter Egg</strong> (30 pts) - Both (2) groups finished the
             race twice.
@@ -684,18 +689,18 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">3-LEGGED RACE</h2>
-        <div className="mb-2">
+        <div className="mb-2 text-white">
           <strong>Objective:</strong> Teams of two compete in a relay-style race
           where each partner must tie their inner legs and work together to
           reach the finish line.
         </div>
-        <div className="mb-2">
+        <div className="mb-2 text-white">
           <strong>Venue:</strong> Jubilee Park
         </div>
         <h3 className="text-lg font-semibold my-2">Mechanics</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>Each team must select 10 players, divided into 5 pairs.</li>
           <li>
             Each player ties one leg to their partner’s using the ribbon
@@ -707,7 +712,7 @@ export default function PanakayonGuidelines() {
           <li>There will be a time limit of 5 minutes.</li>
         </ol>
         <h3 className="text-lg font-semibold my-2">Scoring</h3>
-        <ol className="list-decimal pl-6 space-y-2">
+        <ol className="list-decimal pl-6 space-y-2 text-white">
           <li>
             <strong>Easter Egg</strong> (30 pts) - All five (5) pairs reached
             the goal and succeeded in a single-round three-way race.
@@ -730,7 +735,7 @@ export default function PanakayonGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">JUMP JUMP GO</h2>
         <div className="mb-2">
           <strong>Objective:</strong> The team must complete the most jumps

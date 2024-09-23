@@ -1,11 +1,11 @@
 export default function MEMEicryGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 text-white">
       <h1 className="text-3xl font-bold mb-6">
-        MEME-icry: Spoof and Mimicry Challenge
+        MEME-icry: Video Spoof Guidelines and Criteria
       </h1>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Objectives</h2>
         <p>
           To entertain and engage the audience by recreating popular scenes or
@@ -14,7 +14,7 @@ export default function MEMEicryGuidelines() {
         </p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -71,10 +71,9 @@ export default function MEMEicryGuidelines() {
           </li>
         </ol>
       </section>
-
+      {/* Criteria Section */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Criteria for Judging</h2>
-        <p>Insert criteria here.</p>
+        <h2 className="text-2xl font-semibold">Criteria for Judging</h2>
       </section>
     </article>
   );

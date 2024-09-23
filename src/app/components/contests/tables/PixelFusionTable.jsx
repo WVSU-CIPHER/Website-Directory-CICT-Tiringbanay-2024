@@ -10,7 +10,7 @@ const tableData = [
 
 export default function PixelFusionTable() {
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="text-white w-full overflow-x-auto">
       <table className="min-w-full bg-transparent border border-black">
         <thead>
           <tr>
