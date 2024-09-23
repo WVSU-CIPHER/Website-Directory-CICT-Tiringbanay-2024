@@ -42,30 +42,21 @@ const MDXContent = dynamic(() => import('../../components/mdx/MdxContent'), { ss
 
 export default async function ContestDetails({ params }) {
     try {
-        console.log("Fetching RAG list...");
         const ragList = await getAllRAG();
-        console.log("RAG list fetched:", ragList);
 
         const rag = ragList.find(rag => rag.slug === params.slug);
-        console.log("Found RAG:", rag);
 
         if (!rag) {
             throw new Error(`RAG not found for slug: ${params.slug}`);
         }
 
-        console.log("Fetching RAG content...");
         const { data, content } = await getRAGBySlug(rag.slug);
-        console.log("RAG data:", data);
-        console.log("RAG content length:", content?.length);
 
         if (!content) {
             throw new Error(`No content found for RAG: ${rag.slug}`);
         }
 
-        console.log("Serializing MDX content...");
         const mdxSource = await serialize(content);
-        console.log("MDX serialized successfully");
-
         const slug = params.slug;
         const guidelineComponent = components.find(component => component.key === slug);
         const tableComponent = components.find(component => component.key === slug)?.tableComponent;
