@@ -60,6 +60,7 @@ export default function ProgrammePage() {
                                     <ProgrammeItem program={morningProgramFlow[4]} id="e" name="program" />
                                     <ProgrammeItem program={morningProgramFlow[5]} id="f" name="program" />
                                     <ProgrammeItem program={morningProgramFlow[6]} id="g" name="program" />
+                                    <ProgrammeItem program={morningProgramFlow[7]} id="h" name="program" />
 
                                 </div>
                             </div>
@@ -70,13 +71,14 @@ export default function ProgrammePage() {
                                 <h1 className={`${chopsic.className} text-[24px]`}>{afternoonTitle}</h1>
                                 {/* timeline */}
                                 <div className="flex flex-col w-full gap-2 text-white">
-                                    <ProgrammeItem program={afternoonProgramFlow[0]} id="h" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[1]} id="i" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[2]} id="j" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[3]} id="k" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[4]} id="l" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[5]} id="m" name="program" />
-                                    <ProgrammeItem program={afternoonProgramFlow[6]} id="n" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[0]} id="i" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[1]} id="j" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[2]} id="k" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[3]} id="l" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[4]} id="m" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[5]} id="n" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[6]} id="o" name="program" />
+                                    <ProgrammeItem program={afternoonProgramFlow[7]} id="p" name="program" />
                                 </div>
 
                             </div>
