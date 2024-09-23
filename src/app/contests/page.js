@@ -16,10 +16,3 @@ export default async function ContestsPage() {
 
     );
 }
-
-
-
-
-
-
-

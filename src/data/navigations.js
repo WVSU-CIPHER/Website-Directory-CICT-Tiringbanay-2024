@@ -3,7 +3,7 @@
 export const navigations = [
     { name: "guidelines", href: "/guidelines" },
     { name: "programme", href: "/programme" },
-    { name: "contest", href: "/contests" },
+    { name: "contests", href: "/contests" },
     { name: "groupings", href: "/groupings" },
     { name: "search", href: "/student-search" },
 ];

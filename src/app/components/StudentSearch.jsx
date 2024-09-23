@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from "react";
 import Fuse from "fuse.js";
 import students from "../../data/students";
-import { FaSearchengin } from "react-icons/fa6";
 
 export default function StudentSearchAndTable() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -63,8 +62,13 @@ export default function StudentSearchAndTable() {
   return (
     // WHOLE CONTAINER
     <div className="relative mb-10">
-      <h1 className="font-chopsic text-[30px] md:text-[60px] flex items-center justify-center">
-        <FaSearchengin className="hidden md:block" />
+      <h1
+        className="font-chopsic text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+      text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow
+      flex items-center justify-center
+       tracking-[1.6px] pb-8 md:pb-14
+      "
+      >
         Search Gunter:
       </h1>
       <div className="w-full max-w-6xl mx-auto py-5 px-5 bg-[rgb(1,0,4)]/80 backdrop-blur-md relative rounded-lg">
@@ -74,7 +78,7 @@ export default function StudentSearchAndTable() {
             placeholder="Search students..."
             value={searchTerm}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81ecde] focus:border-transparent"
+            className="w-full px-4 py-2 bg-[#81ECDE]  text-gray-900 text-sm md:text-base placeholder-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81ecde] focus:border-transparent"
             aria-label="Search students"
           />
           {searchResults.length > 0 && (
@@ -95,9 +99,10 @@ export default function StudentSearchAndTable() {
         </div>
 
         {/* NAMES LIST CONTAINER */}
+
         <div
           div
-          className="overflow-x-auto max-h-[500px] md:max-h-[400px] overflow-y-scroll rounded-lg text-[12px] md:text-base"
+          className="overflow-x-auto max-h-[500px] md:max-h-[400px] rounded-lg text-[12px] md:text-base"
         >
           <table className="w-full text-left border ">
             <thead>
@@ -113,7 +118,7 @@ export default function StudentSearchAndTable() {
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="overflow-y-scroll">
               {sortedStudents.slice(0, displayCount).map((student) => {
                 const group = groupMap[student.groupKey];
                 return (

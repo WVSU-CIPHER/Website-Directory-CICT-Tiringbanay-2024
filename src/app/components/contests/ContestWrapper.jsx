@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { chopsic } from "@/app/layout";
-import bg from "../../../../public/assets/images/background.png";
+import bg from "../../../../public/assets/images/background.webp";
 
 // Page components
 import RulesAndGuidelinesPDF from "./ContestPDF";

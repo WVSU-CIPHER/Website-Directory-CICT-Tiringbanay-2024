@@ -23,10 +23,10 @@ export default function Header() {
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <div className="w-full fixed top-0 right-0 flex flex-col px-[64px] py-[32px] backdrop-blur-md z-[300]">
+    <div className="w-full text-white fixed top-0 right-0 flex flex-col px-10 md:px-[64px] py-[32px] backdrop-blur-md z-[300]">
       <nav className="max-w-[1440px] mx-auto w-full flex items-center justify-between">
         <Link href="/">
-          <span className="font-chopsic">tiringbanay</span>
+          <span className="font-chopsic text-white">tiringbanay</span>
         </Link>
 
         {/* hide on md screens, show on lg screens */}
@@ -93,6 +93,11 @@ export default function Header() {
               <Link onClick={() => setShowMenu(false)} href="/contests">
                 <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
                   Contest
+                </span>
+              </Link>
+              <Link onClick={() => setShowMenu(false)} href="/groupings">
+                <span className="text-md duraration-200 hover:text-[#7AD7CA] ">
+                  Groupings
                 </span>
               </Link>
               <Link onClick={() => setShowMenu(false)} href="/student-search">
