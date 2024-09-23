@@ -1,6 +1,5 @@
 
 
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Poppins } from '@next/font/google';
 
@@ -13,7 +12,6 @@ const poppins = Poppins({
 export default function GuidelinesPage() {
     return (
         <main>
-            <Header />
             <div className="bg-tiringbanay "></div>
 
             <div className="relative text-center md:text-left">
@@ -22,7 +20,7 @@ export default function GuidelinesPage() {
                 <div className="flex flex-col w-full sm:max-w-[1440px] py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl bg-[rgb(1,0,4)]/80 backdrop-blur-md z-1">
                     <div className="text-white flex flex-col mx-auto sm:mx-0">
                         <div className="font-chopsic flex justify-center sm:justify-start text-[24px] uppercase items-center  tracking-widest">rules and regulations</div>
-                        <div className={`${poppins.className} leading-6 pt-8 list-decimal justify-center `}>
+                        <div className={`${poppins.className} leading-6 pt-8 list-decimal justify-center px-4 space-y-1 sm:space-y-2`}>
                             <li>All participants must be current students and/or faculty of West Visayas State University&#39;s College of Information and Communications  Technology.  </li>
                             <li>All CICTzens are encouraged to attend the event; hence, sanctions  will be imposed on students who will not attend (except for those with  valid excuses). </li>
                             <li>In the morning session, second-year to fourth-year students should  wear their TYPE B uniform, while first-year students can wear  ORANGE shirts. </li>
@@ -38,7 +36,7 @@ export default function GuidelinesPage() {
                 <div className=" flex flex-col w-full sm:max-w-[1440px] my-10 sm:mt-16 py-8 px-4 sm:px-16 mx-auto rounded-none sm:rounded-2xl backdrop-blur-md bg-[rgb(1,0,4)]/80 backdrop-blur-md z-1">
                     <div className="text-white flex flex-col mx-auto sm:mx-0">
                         <div className="font-chopsic flex justify-center sm:justify-start text-[24px] uppercase items-center tracking-widest">scoring and awarding system</div>
-                        <div className={`${poppins.className} mt-8 mb-6 leading-6 list-decimal `}>
+                        <div className={`${poppins.className} mt-8 mb-6 leading-6 list-decimal px-4 space-y-1 sm:space-y-2`}>
                             <li>A Ranking System will be utilized to determine the winners of each contest. The team with the highest number of points will be the winner. Should there be a tie, the official tabulators have the power to use the Point System. In case, the condition of deadlock occurs, the Chief Judge shall have the authority to break and conclude the results.</li>
                             <li>For overall ranking, below is the Point System that will be used for each contest/game. The team with the highest accumulated score from each contest will be held as the overall Tiringbanay 2024 winner. </li>
                             <li>Announcement of the winners will follow at the end of Panakayon - Engagement Games.</li>
