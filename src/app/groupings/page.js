@@ -42,10 +42,9 @@ export default function GroupingsPage() {
                             ))}
                         </section>
                     </main>
-
-
                 </div>
             </div>
+
             <Footer />
         </>
     )
