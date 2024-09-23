@@ -44,7 +44,7 @@ export default function GroupingsPage() {
                     </main>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
