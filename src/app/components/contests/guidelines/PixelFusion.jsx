@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function PixelFusionGuidelines() {
   return (
     <article className="container mx-auto px-4 py-8">
@@ -30,7 +31,7 @@ export default function PixelFusionGuidelines() {
                 Participants must select a product or material that features a
                 human face, body part, or object on its cover. The chosen item
                 should be creatively used in a photograph to augment or blend
-                with any part of the participant's face or body.
+                with any part of the participant&apos;s face or body.
               </li>
               <li>
                 All entries must align with the competition theme: Tiringbanay
@@ -69,7 +70,7 @@ export default function PixelFusionGuidelines() {
               </li>
               <li>
                 Filters are permitted, but excessive alterations that compromise
-                the natural appearance of the image may impact the judges'
+                the natural appearance of the image may impact the judges\'
                 scoring.
               </li>
             </ul>
