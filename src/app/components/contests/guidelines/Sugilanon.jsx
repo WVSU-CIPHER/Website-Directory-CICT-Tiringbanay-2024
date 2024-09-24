@@ -1,11 +1,11 @@
 export default function SugilanonGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 text-white">
       <h1 className="text-3xl font-bold mb-6">
-        Sugilanon: Conversation with Vision
+        Sugilanon: Professional Development Forum Rules and Guidelines
       </h1>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Objectives</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>
@@ -31,7 +31,7 @@ export default function SugilanonGuidelines() {
         </ul>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>

@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function PixelFusionGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 text-white">
       <h1 className="text-3xl font-bold mb-6">
-        Tiringbanay 2024: “A Shift in Reality”
+        Pixel Fusion: Creative Photo Contest Guidelines and Criteria
       </h1>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -101,7 +101,7 @@ export default function PixelFusionGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">Submission Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -175,6 +175,13 @@ export default function PixelFusionGuidelines() {
             </ul>
           </li>
         </ol>
+      </section>
+      {/* Criteria for Judging Section */}
+      <section>
+        <h2 className="mt-4 text-2xl font-semibold mb-4">
+          Criteria for Judging
+        </h2>
+        {/* Insert criteria for judging here as needed */}
       </section>
     </article>
   );

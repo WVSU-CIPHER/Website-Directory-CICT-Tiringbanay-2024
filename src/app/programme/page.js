@@ -6,6 +6,14 @@ import Image from "next/image";
 import bg from "/public/assets/images/background.webp"
 import Footer from "../components/Footer";
 import { morningProgramFlow, afternoonProgramFlow, morningTitle, afternoonTitle } from "@/data/programs";
+import Countdown from "../components/programme/CountDown";
+
+import moment from "moment";
+
+// Store current time now
+const now = moment();
+
+console.log("Time now: ", now.format("HH"));
 
 const poppins = Poppins({
     weight: ["400", "900"],
@@ -29,13 +37,15 @@ export default function ProgrammePage() {
             <div className="relative z-10 min-h-screen flex flex-col">
                 <main className="flex-grow overflow-y-auto">
                     <div className="lg:pb-2 items-center justify-center flex flex-col w-full md:w-[90%] mx-auto">
-                        <div className="">
+                        <div className="pb-8 flex flex-col gap-6">
                             <h1 className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center
                                 text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow
-                                pb-8 md:pb-14 mt-10 md:mt-16  tracking-[1.6px]
+                                  mt-10 md:mt-16  tracking-[1.6px]
                                 `}>
                                 programme
                             </h1>
+                            <Countdown />
+
                         </div>
 
                         <div className="flex flex-col gap-10 w-full mb-10">
@@ -80,15 +90,33 @@ export default function ProgrammePage() {
 }
 
 function ProgrammeItem({ program, defaultChecked, id, name }) {
+    const now = moment();
+    // As of the moment time
+    const currentTime = now.format("HH");
+    const currentDate = now.format("YYYY-MM-DD");
+
+    // Extract the time from the schedule
+    const timeSchedRange1 = program.time.slice(0, 2);
+    const timeSchedRange2 = program.time.slice(8, 10);
+
+
+    const timeFormat = program.time.slice(14, 16);
+    const targetDate = moment('2024-09-27', 'YYYY-MM-DD').format("YYYY-MM-DD");
+
+    // Fuck u whoever reads this 
+    const isTiringbanayDay = targetDate === currentDate;
+    const isTimeSchedMatched = currentDate === targetDate && (currentTime >= timeSchedRange1 && currentTime <= timeSchedRange2)
+
     return (
         <div className="relative w-full">
             <input
                 type="radio"
-                defaultChecked={defaultChecked ?? false}
+                checked={isTimeSchedMatched}
                 id={id}
                 name={name}
                 value={program.title}
                 className="hidden peer"
+
             />
             <label
                 htmlFor={id}

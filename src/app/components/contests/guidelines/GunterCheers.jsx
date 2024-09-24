@@ -1,11 +1,11 @@
 export default function TiringbanayGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 text-white">
       <h1 className="text-3xl font-bold mb-6">
-        Tiringbanay 2024: A Shift in Reality - Cheers & Yells
+        Gunter Cheers: Cheers and Yells Showdown Guidelines and Criteria
       </h1>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -51,11 +51,8 @@ export default function TiringbanayGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">Criteria for Judging</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          {/* Add the specific judging criteria here */}
-        </ul>
       </section>
     </article>
   );

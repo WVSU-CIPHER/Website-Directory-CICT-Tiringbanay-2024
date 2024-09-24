@@ -1,9 +1,11 @@
 export default function ciSPITzensGuidelines() {
   return (
-    <article className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">ciSPITzens: Improv Challenge</h1>
+    <article className="container mx-auto px-4 py-8 text-white">
+      <h1 className="text-3xl font-bold mb-6">
+        ciSPITzens: Spontaneous Improvisational Theatre (SPIT) Guidelines
+      </h1>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Objectives</h2>
         <p>
           To encourage creativity, quick thinking, and collaboration among
@@ -12,7 +14,7 @@ export default function ciSPITzensGuidelines() {
         </p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Rules and Guidelines</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
@@ -44,7 +46,7 @@ export default function ciSPITzensGuidelines() {
         </ol>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 text-white">
         <h2 className="text-2xl font-semibold mb-4">Categories</h2>
 
         <h3 className="text-xl font-semibold mb-2">
@@ -94,7 +96,7 @@ export default function ciSPITzensGuidelines() {
         </ol>
       </section>
 
-      <section>
+      <section className="text-white">
         <h2 className="text-2xl font-semibold mb-4">Video References</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>
@@ -125,6 +127,10 @@ export default function ciSPITzensGuidelines() {
             </a>
           </li>
         </ul>
+      </section>
+      {/* Criteria Section */}
+      <section>
+        <h2 className="mt-4 text-2xl font-semibold">Criteria for Judging</h2>
       </section>
     </article>
   );

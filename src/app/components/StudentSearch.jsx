@@ -118,13 +118,13 @@ export default function StudentSearchAndTable() {
                 </th>
               </tr>
             </thead>
-            <tbody className="overflow-y-scroll">
+            <tbody className="overflow-y-scroll text-white">
               {sortedStudents.slice(0, displayCount).map((student) => {
                 const group = groupMap[student.groupKey];
                 return (
                   <tr key={student.name} className="hover:bg-gray-700">
-                    <td className="py-2 px-4 border-b">{student.name}</td>
-                    <td className="py-2 px-4 border-b font-bold text-center">
+                    <td className="py-2 px-4 border-b text-white">{student.name}</td>
+                    <td className="py-2 px-4 border-b font-bold text-white text-center">
                       {group?.name || "Unknown"}
                     </td>
                     <td className="py-2 px-4 border-b text-center">

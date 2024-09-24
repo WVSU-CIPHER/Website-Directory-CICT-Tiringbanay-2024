@@ -33,11 +33,13 @@ export default function HeroPage() {
           >
             A shift in reality
           </div>
-          <div className="font-chopsic uppercase text-center md:text-left leading-10
+          <div
+            className="font-chopsic uppercase text-center md:text-left leading-10
           tracking-[2.5px] mx-[5%] md:mx-0
           text-2xl md:text-3xl lg:text-5xl
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
-          ">
+          "
+          >
             cict tiringbanay 2024
           </div>
         </div>
@@ -47,10 +49,12 @@ export default function HeroPage() {
           className={`${poppins.className} mt-8 flex flex-row gap-8 justify-center md:justify-start text-white`}
         >
           <Link href="/groupings">
-            <button className="flex uppercase h-[30px] bg-[#59958480] hover:bg-[#5D6D5C] px-4 py-1 items-center
+            <button
+              className="flex uppercase h-[30px] bg-[#59958480] hover:bg-[#5D6D5C] px-4 py-1 items-center
             sm:place-items-start sm:pb-4 gap-[8px] rounded-lg
             border-[1px] border-[#81ECDE] text-[14px]  font-semibold text-white
-            ">
+            "
+            >
               Find your Group
             </button>
           </Link>
@@ -79,12 +83,16 @@ export default function HeroPage() {
         "
       >
         <div className="text-white flex flex-col px-4 sm:px-8">
-          <div className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
+          <div
+            className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
-          ">
+          "
+          >
             rationale
           </div>
-          <div className={`${poppins.className} justify-center text-sm md:text-base`}>
+          <div
+            className={`${poppins.className} justify-center text-sm md:text-base`}
+          >
             The College of Information and Communications Technology (CICT) has
             consistently been a beacon of innovation, creativity, and
             collaboration within the university. The college’s achievements are
@@ -105,20 +113,26 @@ export default function HeroPage() {
       </div>
 
       {/* OBJECTIVES */}
-      <div className="flex flex-col w-full my-10 py-6 mx-auto max-w-[95%] backdrop-blur-md bg-[#010004d8] z-1 relative
+      <div
+        className="flex flex-col w-full my-10 py-6 mx-auto max-w-[95%] backdrop-blur-md bg-[#010004d8] z-1 relative
       rounded-lg md:rounded-xl 
-      ">
+      "
+      >
         <div className="text-white flex flex-col px-4 sm:px-8">
-          <div className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
+          <div
+            className="font-chopsic flex text-lg md:text-2xl uppercase items-center pb-4 tracking-widest
           text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
-          ">
+          "
+          >
             Objectives
           </div>
           <div className={`${poppins.className} text-sm md:text-base`}>
             Tiringbanay CICT aims to achieve the following objectives:
           </div>
           <br />
-          <div className={`${poppins.className} list-inside ml-3 gap-3 text-sm md:text-base`}>
+          <div
+            className={`${poppins.className} list-inside ml-3 gap-3 text-sm md:text-base`}
+          >
             <li>
               To promote unity and strengthen bonds among students, across
               different programs and year levels, and faculty within the CICT
@@ -141,9 +155,11 @@ export default function HeroPage() {
       {/* GUEST SPEAKER */}
       <div className="flex flex-col w-full h-fit max-w-[95%] md:max-w-[900px] mb-10 py-8 px-9  mx-auto rounded-lg md:rounded-xl bg-[#010004d8] z-1 relative">
         <div className="text-white flex flex-col px-8">
-          <div className="font-chopsic text-center text-2xl md:text-3xl uppercase tracking-widest
+          <div
+            className="font-chopsic text-center text-2xl md:text-3xl uppercase tracking-widest
           text-transparent bg-clip-text bg-gradient-to-br md:bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow
-          ">
+          "
+          >
             Guest Speaker
           </div>
         </div>
@@ -158,22 +174,29 @@ export default function HeroPage() {
                 height={220}
                 alt="Guest Speaker"
               />
-
             </div>
             <div className="flex flex-col justify-center w-[70%] md:ml-5 ">
-              <div className={`${poppins.className} font-bold uppercase text-xl text-center md:text-left md:text-2xl 
+              <div
+                className={`${poppins.className} font-bold uppercase text-xl text-center md:text-left md:text-2xl 
                  text-transparent bg-clip-text bg-gradient-to-br md:bg-gradient-to-r from-[#81ECDE] to-[#59958480] drop-shadow
-                `}>
+                `}
+              >
                 Dax Gabriel Celis
               </div>
-              <div className={`${poppins.className} uppercase font-bold text-zinc-300 text-center py-3 md:py-0 md:text-left md:text-lg
+              <div
+                className={`${poppins.className} uppercase font-bold text-zinc-300 text-center py-3 md:py-0 md:text-left md:text-lg
                 my-2
-                `}>
+                `}
+              >
                 Mobile Applications Lead - Architect
               </div>
-              <div className={`${poppins.className} font-light text-sm md:text-base text-center md:text-left`}>
-                Software Development Manager and Mobile Applications Architect. SAFe certified scrum practitioner
-                with solid industry knowledge and experience. A people leader, career developer, and value creator.
+              <div
+                className={`${poppins.className} font-light text-white text-sm md:text-base text-center md:text-left`}
+              >
+                Software Development Manager and Mobile Applications Architect.
+                SAFe certified scrum practitioner with solid industry knowledge
+                and experience. A people leader, career developer, and value
+                creator.
               </div>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default function GroupDetails({ params }) {
                         <h1 className="text-2xl md:text-3xl font-bold font-chopsic
                         text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow
                         ">{group.title}</h1>
-                        <p className="mt-8 font-poppins text-base">{group.description}</p>
+                        <p className="mt-8 font-poppins text-white text-base">{group.description}</p>
 
                     </div>
 
