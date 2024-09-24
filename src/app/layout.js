@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Poppins } from "@next/font/google";
 import Header from "./components/Header";
+import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
