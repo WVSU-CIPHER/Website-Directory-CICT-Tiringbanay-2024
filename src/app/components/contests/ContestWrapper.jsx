@@ -23,7 +23,7 @@ export default function ContestWrapper({ children }) {
 
       <div className="relative z-10 min-h-screen flex flex-col">
         <main className="flex-grow pt-16 overflow-y-auto">
-          <div className="container mx-auto px-4 py-8">
+          <div className="container mx-auto px-4 py-8 mt-8">
             <h1
               className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow mb-8`}
             >
