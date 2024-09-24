@@ -37,7 +37,7 @@ export default function ProgrammePage() {
             <div className="relative z-10 min-h-screen flex flex-col">
                 <main className="flex-grow overflow-y-auto">
                     <div className="lg:pb-2 items-center justify-center flex flex-col w-full md:w-[90%] mx-auto">
-                        <div className="pb-8 flex flex-col gap-4">
+                        <div className="pb-8 flex flex-col gap-6">
                             <h1 className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center
                                 text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow
                                   mt-10 md:mt-16  tracking-[1.6px]
@@ -91,7 +91,7 @@ export default function ProgrammePage() {
 
 function ProgrammeItem({ program, defaultChecked, id, name }) {
     const now = moment();
-    // as of the moment time
+    // As of the moment time
     const currentTime = now.format("HH");
     const currentDate = now.format("YYYY-MM-DD");
 
@@ -103,6 +103,7 @@ function ProgrammeItem({ program, defaultChecked, id, name }) {
     const timeFormat = program.time.slice(14, 16);
     const targetDate = moment('2024-09-27', 'YYYY-MM-DD').format("YYYY-MM-DD");
 
+    // Fuck u whoever reads this 
     const isTiringbanayDay = targetDate === currentDate;
     const isTimeSchedMatched = currentDate === targetDate && (currentTime >= timeSchedRange1 && currentTime <= timeSchedRange2)
 
@@ -110,7 +111,7 @@ function ProgrammeItem({ program, defaultChecked, id, name }) {
         <div className="relative w-full">
             <input
                 type="radio"
-                defaultChecked={isTimeSchedMatched}
+                checked={isTimeSchedMatched}
                 id={id}
                 name={name}
                 value={program.title}

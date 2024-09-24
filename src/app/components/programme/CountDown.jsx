@@ -39,13 +39,15 @@ export default function Countdown() {
 
   return (
     <div
-      className={`w-full text-white ${chopsic.className} text-lg text-center text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow`}
+      className={`w-full text-white  text-lg text-center text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow`}
     >
-      <h1 className="font-normal text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow">
+      <h1
+        className={`font-normal ${chopsic.className} text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-br text-white`}
+      >
         Countdown to September 27
       </h1>
       <p
-        className={`text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow text-lg md:text-xl lg:text-2xl font-medium uppercase ${poppins.className}`}
+        className={` text-transparent bg-clip-text bg-gradient-to-br text-white text-lg md:text-xl lg:text-2xl font-medium uppercase`}
       >
         {timeRemaining.days} days, {timeRemaining.hours} hours,{" "}
         {timeRemaining.minutes} minutes, {timeRemaining.seconds} seconds
