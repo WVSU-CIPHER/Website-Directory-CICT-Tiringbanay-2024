@@ -39,18 +39,18 @@ export default function Countdown() {
 
   return (
     <div
-      className={`w-full text-white  text-lg text-center text-transparent bg-clip-text bg-gradient-to-br from-[#81ECDE] to-[#59958480] drop-shadow`}
+      className={`w-full text-white text-center `}
     >
       <h1
-        className={`font-normal ${chopsic.className} text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-br text-white`}
+        className={`font-normal ${chopsic.className} text-lg md:text-xl lg:text-2xl tracking-widest text-white`}
       >
         Countdown to September 27
       </h1>
       <p
-        className={` text-transparent bg-clip-text bg-gradient-to-br text-white text-lg md:text-xl lg:text-2xl font-medium uppercase`}
+        className={` text-transparent text-white font-medium  text-base`}
       >
-        {timeRemaining.days} days, {timeRemaining.hours} hours,{" "}
-        {timeRemaining.minutes} minutes, {timeRemaining.seconds} seconds
+        {timeRemaining.days} Days, {timeRemaining.hours} Hours,{" "}
+        {timeRemaining.minutes} Minutes, {timeRemaining.seconds} Seconds
       </p>
     </div>
   );

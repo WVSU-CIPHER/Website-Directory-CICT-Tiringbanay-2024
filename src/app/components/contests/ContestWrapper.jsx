@@ -1,24 +1,17 @@
 import Image from "next/image";
-
 import { chopsic } from "@/app/layout";
 import bg from "../../../../public/assets/images/background.webp";
-
-// Page components
 import RulesAndGuidelinesPDF from "./ContestPDF";
 import ContestItem from "./ContestItem";
 import ContestsOptionPicker from "./ContestOptions";
 import Footer from "../Footer";
-
-// Data for this page
 import { contestList } from "@/data/contests";
 import { navigations } from "@/data/navigations";
 
 export default function ContestWrapper({ children }) {
   return (
-    <div>
-      {/* Content */}
-      <div className="h-screen w-screen overflow-hidden">
-        {/* Background */}
+    <div className="relative min-h-screen overflow-hidden">
+      <div className="fixed inset-0 z-0">
         <Image
           src={bg}
           alt="Background"
@@ -26,64 +19,36 @@ export default function ContestWrapper({ children }) {
           objectFit="cover"
           quality={100}
         />
+      </div>
 
-        {/* overscroll-y-scroll to cater scrolling on y axis */}
-        <div className=" w-full h-full flex flex-col overflow-y-scroll relative gap-4">
-          <div className="items-center justify-center flex flex-col w-[90%] mx-auto pt-[128px] gap-[32px]">
-            <div className=" flex flex-col max-w-full w-full gap-[32px] ">
-              <h1
-                className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow`}
-              >
-                contests
-              </h1>
+      <div className="relative z-10 min-h-screen flex flex-col">
+        <main className="flex-grow pt-16 overflow-y-auto">
+          <div className="container mx-auto px-4 py-8">
+            <h1
+              className={`${chopsic.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[#81ECDE] to-[#59958480] drop-shadow mb-8`}
+            >
+              contests
+            </h1>
 
-              <div className="mx-auto flex flex-col gap-4 max-w-full w-full">
-                {/* Banner for Rules and Guidelines PDF */}
-
-                <RulesAndGuidelinesPDF />
-                <ContestsOptionPicker>
+            <div className="mx-auto flex flex-col gap-4 max-w-full w-full mb-8">
+              <RulesAndGuidelinesPDF />
+              <ContestsOptionPicker>
+                {contestList.map((contest, index) => (
                   <ContestItem
-                    contest={contestList[0]}
-                    href={`${navigations[2].href}/${contestList[0]}`}
+                    key={index}
+                    contest={contest}
+                    href={`${navigations[2].href}/${contest}`}
                   />
-                  <ContestItem
-                    contest={contestList[1]}
-                    href={`${navigations[2].href}/${contestList[1]}`}
-                  />
-                  <ContestItem
-                    contest={contestList[2]}
-                    href={`${navigations[2].href}/${contestList[2]}`}
-                  />
-                  <ContestItem
-                    contest={contestList[3]}
-                    href={`${navigations[2].href}/${contestList[3]}`}
-                  />
-                  <ContestItem
-                    contest={contestList[4]}
-                    href={`${navigations[2].href}/${contestList[4]}`}
-                  />
-                  <ContestItem
-                    contest={contestList[5]}
-                    href={`${navigations[2].href}/${contestList[5]}`}
-                  />
-                  <ContestItem
-                    contest={contestList[6]}
-                    href={`${navigations[2].href}/${contestList[6]}`}
-                  />
-                </ContestsOptionPicker>
-              </div>
+                ))}
+              </ContestsOptionPicker>
             </div>
-            {/* Cards for rag content */}
-            <div className="text-white lex flex-col gap-0 md:gap-[64px] w-screen md:w-full z-[200] backdrop-blur-md bg-black/50 rounded-xl">
-              {/* <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div> */}
-              {/* <Sugilanon /> */}
-              {/* <AvatarBanner /> */}
+
+            <div className="text-white backdrop-blur-md bg-black/50 rounded-xl p-6">
               {children}
             </div>
           </div>
-          {/* Added footer */}
-          <Footer />
-        </div>
+        </main>
+        <Footer />
       </div>
     </div>
   );
