@@ -101,7 +101,7 @@ function ProgrammeItem({ program, defaultChecked, id, name }) {
 
 
     const timeFormat = program.time.slice(14, 16);
-    const targetDate = moment('2024-09-24', 'YYYY-MM-DD').format("YYYY-MM-DD");
+    const targetDate = moment('2024-09-27', 'YYYY-MM-DD').format("YYYY-MM-DD");
 
     const isTiringbanayDay = targetDate === currentDate;
     const isTimeSchedMatched = currentDate === targetDate && (currentTime >= timeSchedRange1 && currentTime <= timeSchedRange2)
