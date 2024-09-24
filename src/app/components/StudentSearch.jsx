@@ -71,14 +71,14 @@ export default function StudentSearchAndTable() {
       >
         Search Gunter:
       </h1>
-      <div className="w-full max-w-6xl mx-auto py-5 px-5 bg-[rgb(1,0,4)]/80 backdrop-blur-md relative rounded-lg">
-        <div className="relative mb-6">
+      <div className="w-full max-w-6xl mx-auto pb-5 px-5 bg-[rgb(1,0,4)]/80 backdrop-blur-md relative rounded-lg">
+        <div className="relative sticky top-[108px] md:top-20 bg-black py-5">
           <input
             type="search"
             placeholder="Search students..."
             value={searchTerm}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 bg-[#81ECDE]  text-gray-900 text-sm md:text-base placeholder-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81ecde] focus:border-transparent"
+            className="w-full px-4 py-2 bg-[#59958480] border border-[#81ecde] text-white text-sm md:text-base placeholder-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#81ecde] focus:border-transparent"
             aria-label="Search students"
           />
           {searchResults.length > 0 && (
