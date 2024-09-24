@@ -7,7 +7,7 @@ export const extractTimeFormat = (time) => time.slice(14, 15);
 
 export default function isTimeMatchedQuery(program) {
     // Day of the event
-    const targetDate = moment('2024-09-24', 'YYYY-MM-DD').format("YYYY-MM-DD");
+    const targetDate = moment('2024-09-27', 'YYYY-MM-DD').format("YYYY-MM-DD");
     const now = moment();
 
     // Current times
