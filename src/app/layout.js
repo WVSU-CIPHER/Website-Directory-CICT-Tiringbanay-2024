@@ -42,9 +42,9 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="flex-grow relative">
             {children}
+            <Analytics />
           </main>
         </div>
-        <Analytics />
       </body>
     </html>
   );
