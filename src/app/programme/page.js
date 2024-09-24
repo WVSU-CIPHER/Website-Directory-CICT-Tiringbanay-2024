@@ -8,12 +8,13 @@ import Footer from "../components/Footer";
 import { morningProgramFlow, afternoonProgramFlow, morningTitle, afternoonTitle } from "@/data/programs";
 import Countdown from "../components/programme/CountDown";
 
-import moment from "moment";
+// Time utils
+import isTimeMatchedQuery from "@/data/timeUtils";
+import { useEffect, useState } from "react";
 
-// Store current time now
-const now = moment();
+// Live time fetching
 
-console.log("Time now: ", now.format("HH"));
+
 
 const poppins = Poppins({
     weight: ["400", "900"],
@@ -90,28 +91,23 @@ export default function ProgrammePage() {
 }
 
 function ProgrammeItem({ program, defaultChecked, id, name }) {
-    const now = moment();
-    // As of the moment time
-    const currentTime = now.format("HH");
-    const currentDate = now.format("YYYY-MM-DD");
 
-    // Extract the time from the schedule
-    const timeSchedRange1 = program.time.slice(0, 2);
-    const timeSchedRange2 = program.time.slice(8, 10);
+    const [isMatched, setIsMatched] = useState(false);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const matched = isTimeMatchedQuery(program);
+            setIsMatched(matched);
 
-
-    const timeFormat = program.time.slice(14, 16);
-    const targetDate = moment('2024-09-27', 'YYYY-MM-DD').format("YYYY-MM-DD");
-
-    // Fuck u whoever reads this 
-    const isTiringbanayDay = targetDate === currentDate;
-    const isTimeSchedMatched = currentDate === targetDate && (currentTime >= timeSchedRange1 && currentTime <= timeSchedRange2)
+        }, 10000)
+        setIsMatched(isTimeMatchedQuery(program));
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className="relative w-full">
             <input
                 type="radio"
-                checked={isTimeSchedMatched}
+                checked={isMatched}
                 id={id}
                 name={name}
                 value={program.title}
