@@ -39,8 +39,8 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        {/* Developers */}
 
+        {/* Developers */}
         <div className="flex w-full mx-auto">
           <div className="flex gap-3 px-2  border-l-4 border-l-[#7AD7CA] mx-auto">
             {/* UI/UX Designers */}
