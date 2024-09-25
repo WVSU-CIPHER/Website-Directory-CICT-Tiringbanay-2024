@@ -33,8 +33,8 @@ export default function GuidelinesPage() {
                         <div className={`${poppins.className} leading-6 pt-4 md:pt-8 list-decimal justify-center text-sm md:text-base`}>
                             <li>All participants must be current students and/or faculty of West Visayas State University&#39;s College of Information and Communications  Technology.  </li>
                             <li>All CICTzens are encouraged to attend the event; hence, sanctions  will be imposed on students who will not attend (except for those with  valid excuses). </li>
-                            <li>In the morning session, second-year to fourth-year students should  wear their TYPE B uniform, while first-year students can wear  ORANGE shirts. </li>
-                            <li>In the afternoon session, all students can wear their Ready Player  One-themed outfits, WHILE sticking to the color choice of their team. </li>
+                            <li>In the morning session, all CICT students should wear color-coded outfit based on their team. </li>
+                            <li>In the afternoon session, all students can wear their Ready Player One-themed outfits. </li>
                             <li>All CICT students are divided into thirteen (13) teams. Each group is  named after characters from Ready Player One. We’ve also provided Group Chat links for the different groups. </li>
                             <li>Each team will choose a Commander to lead their respective teams  and members. </li>
                             <li>The Commander can assign two (2) assistant commanders to help  them.  </li>
