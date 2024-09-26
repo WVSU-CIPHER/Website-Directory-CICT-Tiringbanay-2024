@@ -12,11 +12,13 @@ export default function Countdown() {
     seconds: 0,
   });
 
+  const [isTiringbanayDay, setIsTiringbanayDay] = useState(false);
+
   useEffect(() => {
     const targetDate = moment("2024-09-27 00:00:00", "YYYY-MM-DD HH:mm:ss");
 
     const updateCountdown = () => {
-      const now = moment();
+      const now = moment(); // Move 'now' inside the update function
       const diffDays = targetDate.diff(now, "days");
       const diffHours = targetDate.diff(now, "hours") % 24;
       const diffMinutes = targetDate.diff(now, "minutes") % 60;
@@ -28,6 +30,15 @@ export default function Countdown() {
         minutes: diffMinutes,
         seconds: diffSeconds,
       });
+
+      // Check if today is Tiringbanay Day
+      const currentDate = now.format("YYYY-MM-DD");
+      const eventDate = targetDate.format("YYYY-MM-DD");
+      if (currentDate === eventDate) {
+        setIsTiringbanayDay(true);
+      } else {
+        setIsTiringbanayDay(false);
+      }
     };
 
     // Update countdown every second
@@ -38,20 +49,22 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div
-      className={`w-full text-white text-center `}
-    >
-      <h1
-        className={`font-normal ${chopsic.className} text-lg md:text-xl lg:text-2xl tracking-widest text-white`}
-      >
-        Countdown to September 27
-      </h1>
-      <p
-        className={` text-transparent text-white font-medium  text-base`}
-      >
-        {timeRemaining.days} Days, {timeRemaining.hours} Hours,{" "}
-        {timeRemaining.minutes} Minutes, {timeRemaining.seconds} Seconds
-      </p>
+    <div className={`w-full text-white text-center `}>
+      {!isTiringbanayDay ? (
+        <>
+          <h1
+            className={`font-normal ${chopsic.className} text-lg md:text-xl lg:text-2xl tracking-widest text-white`}
+          >
+            Countdown to September 27
+          </h1>
+          <p className={` text-transparent text-white text-lg font-semibold`}>
+            {timeRemaining.days} D, {timeRemaining.hours} H,{" "}
+            {timeRemaining.minutes} M, {timeRemaining.seconds} S
+          </p>
+        </>
+      ) : (
+        <div className="text-white font-semibold uppercase">game on!</div>
+      )}
     </div>
   );
 }
