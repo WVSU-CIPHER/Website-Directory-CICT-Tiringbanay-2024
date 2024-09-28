@@ -16,6 +16,7 @@ export default function Countdown() {
 
   useEffect(() => {
     const targetDate = moment("2024-09-27 00:00:00", "YYYY-MM-DD HH:mm:ss");
+    const endDate = moment("2024-09-28 23:59:59", "YYYY-MM-DD HH:mm:ss"); // Include the end of September 28
 
     const updateCountdown = () => {
       const now = moment(); // Move 'now' inside the update function
@@ -31,10 +32,12 @@ export default function Countdown() {
         seconds: diffSeconds,
       });
 
-      // Check if today is Tiringbanay Day
+      // Check if today is between September 27 and 28
       const currentDate = now.format("YYYY-MM-DD");
-      const eventDate = targetDate.format("YYYY-MM-DD");
-      if (currentDate === eventDate) {
+      const eventStartDate = targetDate.format("YYYY-MM-DD");
+      const eventEndDate = endDate.format("YYYY-MM-DD");
+
+      if (currentDate >= eventStartDate && currentDate <= eventEndDate) {
         setIsTiringbanayDay(true);
       } else {
         setIsTiringbanayDay(false);
