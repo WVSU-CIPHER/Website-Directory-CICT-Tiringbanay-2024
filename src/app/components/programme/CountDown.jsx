@@ -16,10 +16,10 @@ export default function Countdown() {
 
   useEffect(() => {
     const targetDate = moment("2024-09-27 00:00:00", "YYYY-MM-DD HH:mm:ss");
-    const endDate = moment("2024-09-28 23:59:59", "YYYY-MM-DD HH:mm:ss"); // Include the end of September 28
+    const endDate = moment("2024-09-28 23:59:59", "YYYY-MM-DD HH:mm:ss"); // Set date to end the countdown
 
     const updateCountdown = () => {
-      const now = moment(); // Move 'now' inside the update function
+      const now = moment(); 
       const diffDays = targetDate.diff(now, "days");
       const diffHours = targetDate.diff(now, "hours") % 24;
       const diffMinutes = targetDate.diff(now, "minutes") % 60;
