@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import moment from "moment";
 
 import { chopsic } from "@/app/layout";
-import { poppins } from "@/app/layout";
 
 export default function Countdown() {
   const [timeRemaining, setTimeRemaining] = useState({
@@ -16,7 +15,6 @@ export default function Countdown() {
 
   useEffect(() => {
     const targetDate = moment("2024-09-27 00:00:00", "YYYY-MM-DD HH:mm:ss");
-    const endDate = moment("2024-09-28 23:59:59", "YYYY-MM-DD HH:mm:ss"); // Include the end of September 28
 
     const updateCountdown = () => {
       const now = moment(); // Move 'now' inside the update function
@@ -35,9 +33,8 @@ export default function Countdown() {
       // Check if today is between September 27 and 28
       const currentDate = now.format("YYYY-MM-DD");
       const eventStartDate = targetDate.format("YYYY-MM-DD");
-      const eventEndDate = endDate.format("YYYY-MM-DD");
 
-      if (currentDate >= eventStartDate && currentDate <= eventEndDate) {
+      if (currentDate >= eventStartDate) {
         setIsTiringbanayDay(true);
       } else {
         setIsTiringbanayDay(false);
@@ -53,7 +50,9 @@ export default function Countdown() {
 
   return (
     <div className={`w-full text-white text-center `}>
-      {!isTiringbanayDay ? (
+      {isTiringbanayDay ? (
+        <div className="text-white font-semibold uppercase">game on!</div>
+      ) : (
         <>
           <h1
             className={`font-normal ${chopsic.className} text-lg md:text-xl lg:text-2xl tracking-widest text-white`}
@@ -65,8 +64,6 @@ export default function Countdown() {
             {timeRemaining.minutes} M, {timeRemaining.seconds} S
           </p>
         </>
-      ) : (
-        <div className="text-white font-semibold uppercase">game on!</div>
       )}
     </div>
   );
