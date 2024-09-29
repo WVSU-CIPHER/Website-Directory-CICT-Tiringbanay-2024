@@ -17,7 +17,7 @@ export default function Countdown() {
     const targetDate = moment("2024-09-27 00:00:00", "YYYY-MM-DD HH:mm:ss");
 
     const updateCountdown = () => {
-      const now = moment(); // Move 'now' inside the update function
+      const now = moment();
       const diffDays = targetDate.diff(now, "days");
       const diffHours = targetDate.diff(now, "hours") % 24;
       const diffMinutes = targetDate.diff(now, "minutes") % 60;
